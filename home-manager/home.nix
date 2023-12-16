@@ -59,6 +59,15 @@
     ".minikube/config/config.json".source = ./dotfiles/minikube.json;
   };
 
+
+
+  programs.fish = {
+    enable = true;
+    shellAliases = {
+      k = "kubectl";
+      kctx = "kubie ctx";
+    };
+  };
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
   # Manager then you have to manually source 'hm-session-vars.sh' located at
@@ -73,6 +82,7 @@
   home.sessionVariables = {
     EDITOR = "hx";
   };
+
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
