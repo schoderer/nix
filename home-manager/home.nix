@@ -30,12 +30,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    ".config/helix/config.toml".text = ''
-      theme = "onedark"
-      [editor]
-      line-number = "relative"
-      color-modes = true
-    '';
+    ".config/helix/config.toml".source = dotfiles/helix.toml;
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
