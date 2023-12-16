@@ -36,6 +36,19 @@
 
   ];
   programs = {
+    ## Fish shell
+    fish = {
+      enable = true;
+      shellAbbrs = {
+        k = "kubectl";
+        kctx = "kubie ctx";
+      };
+      interactiveShellInit = ''
+        set fish_greeting # Disable greeting
+      '';
+      plugins = [];
+    };
+    ## Git
     git = {
       enable = true;
       userName = "Michael Schoderer";
@@ -46,6 +59,13 @@
         pull.rebase = true;
       };
     };
+    ## Direnv
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
+
+
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -60,14 +80,6 @@
   };
 
 
-
-  programs.fish = {
-    enable = true;
-    shellAliases = {
-      k = "kubectl";
-      kctx = "kubie ctx";
-    };
-  };
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
   # Manager then you have to manually source 'hm-session-vars.sh' located at
