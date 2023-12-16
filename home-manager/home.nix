@@ -13,7 +13,26 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.packages = [
+  home.packages = with pkgs; [
+    # Develop
+    just
+    vscode
+    jetbrains-toolbox
+    gh
+
+    # Kubernetes
+    kubectl
+    kubernetes-helm
+    k9s
+    minikube
+    kubie
+
+    # Misc
+    firefox
+    htop
+    ripgrep
+    jq
+    yq
 
   ];
   programs = {
@@ -21,21 +40,23 @@
       enable = true;
       userName = "Michael Schoderer";
       userEmail = "schoderer@proton.me";
+      extraConfig = {
+        init.defaultbranch = "master";
+        push.autosetupremote = true;
+        pull.rebase = true;
+      };
     };
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    ".config/helix/config.toml".source = dotfiles/helix.toml;
-    # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/helix/config.toml".source = ./dotfiles/helix.toml;
+    ".minikube/config/config.json".source = ./dotfiles/minikube.json;
   };
 
   # Home Manager can also manage your environment variables through
