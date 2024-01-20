@@ -7,6 +7,7 @@
     distrobox
     jq
     yq
+    tokei
 
     # Nix
     nixpkgs-fmt
