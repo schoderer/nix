@@ -1,10 +1,11 @@
 { config, pkgs, ...}: {
   home.packages = with pkgs; [
+
     starship
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
     # Misc
     firefox
-    htop
+    btop
     ripgrep
     helix
     just
@@ -19,6 +20,7 @@
         k = "kubectl";
         kctx = "kubie ctx";
         distro = "distrobox";
+        htop = "btop";
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
