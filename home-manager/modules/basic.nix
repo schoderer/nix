@@ -1,6 +1,7 @@
 { config, pkgs, ...}: {
   home.packages = with pkgs; [
     starship
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
     # Misc
     firefox
     htop
@@ -54,4 +55,6 @@
   home.sessionVariables = {
     EDITOR = "hx";
   };
+
+  fonts.fontconfig.enable = true;
 }
