@@ -23,6 +23,13 @@
             ./nixos_config/develop.nix
           ];
         };
+        tuxedo = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs mainUser; };
+          system = "x86_64-linux";
+          modules = [
+            ./nixos_config/tuxedo.nix
+          ];
+        };
       };
       homeConfigurations = {
         ${mainUser} = home-manager.lib.homeManagerConfiguration {

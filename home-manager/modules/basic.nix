@@ -33,6 +33,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
+    ".config/hypr/hyprland.conf".source = ../dotfiles/hyprland/hyprland.conf;
   };
 
 

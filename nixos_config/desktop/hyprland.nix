@@ -2,9 +2,9 @@
   imports = [
     ./base_desktop.nix
   ];
-  programs.hyperland = {
+  programs.hyprland = {
     enable = true;
-    xwayland = true;
+    xwayland.enable = true;
   };
   environment.sessionVariables = {
     # WLR_NO_HARDWARE_CURSORS = "1";
@@ -22,6 +22,4 @@
     rofi-wayland
     wl-clipboard
   ];
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 }
