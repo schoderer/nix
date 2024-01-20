@@ -1,5 +1,6 @@
 { config, pkgs, ...}: {
   home.packages = with pkgs; [
+    starship
     # Misc
     firefox
     htop
@@ -20,6 +21,7 @@
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
+        starship init fish | source
       '';
       plugins = [];
     };
@@ -34,6 +36,7 @@
     # '';
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
     ".config/hypr/hyprland.conf".source = ../dotfiles/hyprland/hyprland.conf;
+    ".config/starship.toml".source = ../dotfiles/starship.toml;
   };
 
 
