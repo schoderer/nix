@@ -24,7 +24,6 @@
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
-        starship init fish | source
       '';
       plugins = [];
     };
@@ -38,8 +37,6 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
-    ".config/hypr/hyprland.conf".source = ../dotfiles/hyprland/hyprland.conf;
-    ".config/starship.toml".source = ../dotfiles/starship.toml;
   };
 
 
