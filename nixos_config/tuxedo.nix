@@ -9,7 +9,6 @@
     ./programs/gaming.nix
   ];
   networking.hostName = "tuxedo"; # Define your hostname.
-  networking.wireless.enable = false; # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
   services.printing.enable = false; # Printing suppourt
-  services.flatpak.enable = true; # Enable Flatpaks
 }

@@ -5,6 +5,7 @@
   security.rtkit.enable = true;
   boot.plymouth.enable = true; # Enable Plymouth, for encrypted boot
   
+  services.flatpak.enable = true; # Enable Flatpaks
   services.fwupd.enable = true; # Firmware verwaltung und upgrades
   services.pipewire = {
     enable = true;
