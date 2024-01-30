@@ -7,8 +7,10 @@ rebuild-tuxedo:
     sudo nixos-rebuild switch --flake .#tuxedo
 
 home-manager:
-    home-manager switch --flake .#michael
+    home-manager switch --flake .#desktop
 
+home-manager-server:
+    home-manager switch --flake .#server
 
 update:
     nix flake update

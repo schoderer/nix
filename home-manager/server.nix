@@ -6,9 +6,7 @@
 
   imports = [
     ./modules/basic.nix
-    ./modules/basic-gui.nix
     ./modules/dev.nix
-    ./modules/dev-gui.nix
   ];
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.

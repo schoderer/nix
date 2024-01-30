@@ -1,10 +1,5 @@
 { config, pkgs, ...}: {
   home.packages = with pkgs; [
-
-    starship
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
-    # Misc
-    firefox
     btop
     ripgrep
     helix
