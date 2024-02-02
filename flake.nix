@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
+  outputs = { self, nixpkgs, home-manager, nixos-hardware, ... } @ inputs:
     let
       inherit (self) outputs;
       mainUser = "michael";
@@ -34,6 +35,7 @@
           specialArgs = { inherit inputs outputs mainUser; };
           system = "x86_64-linux";
           modules = [
+            nixos-hardware.nixosModules.framework-13-7040-amd
             ./nixos_config/framework.nix
           ];
         };
