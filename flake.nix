@@ -39,6 +39,14 @@
             ./nixos_config/framework.nix
           ];
         };
+      dev_server = nixpkgs.lib.nixosSystem {
+	specialArgs = { inherit inputs outputs mainUser; };
+	system = "x86_64-linux";
+	modules = [
+	./nixos_config/dev_server.nix
+];
+	};
+
       };
       homeConfigurations = {
         desktop = home-manager.lib.homeManagerConfiguration {
