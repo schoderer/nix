@@ -16,6 +16,10 @@
       mainUser = "michael";
     in
     {
+      
+      ##
+      # Systemconfig
+      ##
       nixosConfigurations = {
         develop = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs mainUser; };
@@ -39,15 +43,19 @@
             ./nixos_config/framework.nix
           ];
         };
-      dev_server = nixpkgs.lib.nixosSystem {
-	specialArgs = { inherit inputs outputs mainUser; };
-	system = "x86_64-linux";
-	modules = [
-	./nixos_config/dev_server.nix
-];
-	};
+        dev_server = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs mainUser; };
+          system = "x86_64-linux";
+          modules = [
+            ./nixos_config/dev_server.nix
+          ];
+        };
 
       };
+
+      ##
+      # Homemanagerconfig
+      ##
       homeConfigurations = {
         desktop = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;

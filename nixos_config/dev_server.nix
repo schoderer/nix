@@ -8,6 +8,5 @@
   ];
   networking.hostName = "dev-server"; # Define your hostname.
   services.printing.enable = false; # Printing suppourt
-  # networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
   services.openssh.enable = true;
 }

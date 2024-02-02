@@ -3,12 +3,11 @@
 {
   home.username = "${specialArgs.mainUser}";
   home.homeDirectory = "/home/${specialArgs.mainUser}";
-  home.file = {
-    ".ssh/authorized_keys".source = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII0xljXLdKlJ7g6cbbq3FznMBhYI1xX4YYwHoGBloROQ internal";
-  };
+
   imports = [
     ./modules/basic.nix
     ./modules/dev.nix
+    ./modules/server.nix
   ];
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.
