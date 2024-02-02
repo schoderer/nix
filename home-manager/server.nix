@@ -11,7 +11,9 @@
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
+  home.file.".ssh/authorized_keys" = ''
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII0xljXLdKlJ7g6cbbq3FznMBhYI1xX4YYwHoGBloROQ internal
+  '';
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
