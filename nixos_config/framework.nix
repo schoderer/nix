@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
-    ./hardware/home_pc_configuration.nix
+    ./hardware/framework_configuration.nix
     ./base_configuration.nix
     ./desktop/gnome.nix
     ./programs/common.nix
@@ -10,6 +10,6 @@
   ];
   networking.hostName = "framework"; # Define your hostname.
   services.printing.enable = false; # Printing suppourt
-  networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
+  # networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
 
 }
