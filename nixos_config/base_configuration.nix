@@ -3,6 +3,7 @@
   # Bootloader.
   boot.initrd.systemd.enable = true;
   boot.loader.systemd-boot.enable = true;
+  boot.loader.timeout = 2;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
 
