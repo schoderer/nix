@@ -16,6 +16,8 @@
         kctx = "kubie ctx";
         distro = "distrobox";
         htop = "btop";
+        tshell = "nix shell ";
+        "+" = "nix shell ";
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
