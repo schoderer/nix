@@ -6,7 +6,8 @@
   boot.loader.timeout = 2;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  # Kernel
+  boot.kernelPackages = pkgs.linuxPackages_6_7;
 
   networking.networkmanager.enable = true;
 
