@@ -1,5 +1,4 @@
 { config, pkgs, specialArgs, ... }:
-
 {
   home.username = "${specialArgs.mainUser}";
   home.homeDirectory = "/home/${specialArgs.mainUser}";

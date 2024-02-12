@@ -10,6 +10,10 @@
     # Nix
     nixpkgs-fmt
 
+    # Rust
+    rustup
+    cargo-watch
+    
     # Kubernetes
     kubectl
     kubernetes-helm
