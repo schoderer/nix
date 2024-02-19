@@ -11,7 +11,6 @@
     nixpkgs-fmt
 
     # Rust
-    rustup
     cargo-watch
     
     # Kubernetes
