@@ -3,9 +3,11 @@
   home.packages = with pkgs; [
     gh
     distrobox
+    # Tools
     jq
     yq
     tokei
+    hyperfine
 
     # Nix
     nixpkgs-fmt
