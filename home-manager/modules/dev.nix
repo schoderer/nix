@@ -20,6 +20,7 @@
     kubernetes-helm
     k9s
     minikube
+    kind
     kubie
   ];
 
