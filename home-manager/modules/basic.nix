@@ -4,6 +4,7 @@
     ripgrep
     helix
     just
+    dive
   ];
 
 
@@ -18,6 +19,7 @@
         htop = "btop";
         tshell = "nix shell ";
         "+" = "nix shell ";
+        diveResult = "dive --source docker-archive (gunzip -c $(readlink result) | psub)";
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
