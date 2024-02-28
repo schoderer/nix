@@ -3,7 +3,7 @@ theme = "nord-night"
 [editor]
 line-number = "relative"
 color-modes = true
-
+true-color = true
 [keys.insert]
 "A-q" = "normal_mode"
 

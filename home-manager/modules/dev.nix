@@ -11,6 +11,7 @@
 
     # Nix
     nixpkgs-fmt
+    nil # Nixlanguage server
 
     # Rust
     cargo-watch
@@ -34,9 +35,6 @@
         init.defaultbranch = "master";
         push.autosetupremote = true;
         pull.rebase = true;
-        gpg.format = "ssh";
-        user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO10xSRLGOMQgKTMlbIy0GHEBQ1u7Lio/FR5iLaGSxmC";
-        commit.gpgsign = true;
       };
     };
     ## Direnv
