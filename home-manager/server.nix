@@ -1,8 +1,8 @@
-{ config, pkgs, specialArgs, ... }:
+{ config, pkgs, mainUser, ... }:
 
 {
-  home.username = "${specialArgs.mainUser}";
-  home.homeDirectory = "/home/${specialArgs.mainUser}";
+  home.username = "${mainUser}";
+  home.homeDirectory = "/home/${mainUser}";
 
   imports = [
     ./modules/basic.nix

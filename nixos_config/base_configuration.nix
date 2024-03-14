@@ -7,7 +7,7 @@
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
   # Kernel
-  boot.kernelPackages = pkgs.linuxPackages_6_7;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.networkmanager.enable = true;
 

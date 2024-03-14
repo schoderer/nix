@@ -14,6 +14,9 @@
   outputs = { self, nixpkgs, unstable, home-manager, nixos-hardware, ... } @ inputs:
     let
       inherit (self) outputs;
+      system = "x86_64-linux";
+      
+      unstable-pkgs = unstable.legacyPackages.${system};
       mainUser = "michael";
     in
     {
@@ -23,30 +26,23 @@
       ##
       nixosConfigurations = {
         develop = nixpkgs.lib.nixosSystem {
+          inherit system;
           specialArgs = { inherit inputs outputs mainUser; };
-          system = "x86_64-linux";
           modules = [
             ./nixos_config/develop.nix
           ];
         };
-        tuxedo = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs outputs mainUser; };
-          system = "x86_64-linux";
-          modules = [
-            ./nixos_config/tuxedo.nix
-          ];
-        };
         framework = nixpkgs.lib.nixosSystem {
+          inherit system;
           specialArgs = { inherit inputs outputs mainUser; };
-          system = "x86_64-linux";
           modules = [
             nixos-hardware.nixosModules.framework-13-7040-amd
             ./nixos_config/framework.nix
           ];
         };
         dev_server = nixpkgs.lib.nixosSystem {
+          inherit system;
           specialArgs = { inherit inputs outputs mainUser; };
-          system = "x86_64-linux";
           modules = [
             ./nixos_config/dev_server.nix
           ];
@@ -60,14 +56,14 @@
       homeConfigurations = {
         desktop = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser unstable; };
+          extraSpecialArgs = { inherit inputs outputs mainUser unstable unstable-pkgs; };
           modules = [
             ./home-manager/home.nix
           ];
         };
         server = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser unstable; };
+          extraSpecialArgs = { inherit inputs outputs mainUser unstable-pkgs; };
           modules = [
             ./home-manager/server.nix
           ];

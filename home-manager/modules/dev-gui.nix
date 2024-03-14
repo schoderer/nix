@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable-pkgs, ... }:
 {
-  home.packages = with pkgs; [
-      vscode
-      jetbrains-toolbox
-      ghidra
+
+  home.packages = [
+      pkgs.vscode
+      pkgs.jetbrains-toolbox
     ];
 }
