@@ -18,7 +18,7 @@
         distro = "distrobox";
         htop = "btop";
         tshell = "nix shell ";
-        "+" = "nix shell ";
+        "+" = "nix shell nixpkgs#";
         diveResult = "dive --source docker-archive (gunzip -c $(readlink result) | psub)";
       };
       interactiveShellInit = ''
