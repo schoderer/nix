@@ -19,6 +19,7 @@
   environment.systemPackages = with pkgs; [
     git
     helix
+    vim
     just
     appimage-run
   ];

@@ -15,8 +15,6 @@
     let
       inherit (self) outputs;
       system = "x86_64-linux";
-      
-      unstable-pkgs = unstable.legacyPackages.${system};
       mainUser = "michael";
     in
     {
@@ -56,14 +54,14 @@
       homeConfigurations = {
         desktop = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser unstable unstable-pkgs; };
+          extraSpecialArgs = { inherit inputs outputs mainUser system unstable; };
           modules = [
             ./home-manager/home.nix
           ];
         };
         server = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser unstable-pkgs; };
+          extraSpecialArgs = { inherit inputs outputs mainUser system unstable; };
           modules = [
             ./home-manager/server.nix
           ];
