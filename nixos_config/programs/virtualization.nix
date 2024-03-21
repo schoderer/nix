@@ -9,6 +9,9 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
+  environment.systemPackages = with pkgs; [
+    podman-compose
+  ];
   users.groups.libvirtd.members = [ "michael" ];
 
 }

@@ -4,6 +4,9 @@
     "steam-original"
     "steam-run"
   ];
+  environment.systemPackages = with pkgs; [
+    linuxKernel.packages.linux_zen.xone
+  ];
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
