@@ -6,8 +6,6 @@ in
 
   home.packages = [
       unstable-pkgs.vscode
-      unstable-pkgs.devenv
-
-      pkgs.jetbrains-toolbox
+      unstable-pkgs.jetbrains-toolbox
     ];
 }
