@@ -18,3 +18,7 @@ home-manager-server:
 
 update:
     nix flake update
+
+clean:
+    sudo nix-collect-garbage -d
+    nix-collect-garbage -d

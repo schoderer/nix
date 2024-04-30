@@ -1,6 +1,9 @@
 { config, pkgs, unstable, system, ... }:
 let
-  unstable-pkgs = import unstable {inherit system; config.allowUnfree = true;};
+  unstable-pkgs = import unstable {
+    inherit system; 
+    config.allowUnfree = true;
+   };
 in
 {
 
@@ -8,4 +11,5 @@ in
       unstable-pkgs.vscode
       unstable-pkgs.jetbrains-toolbox
     ];
+    
 }
