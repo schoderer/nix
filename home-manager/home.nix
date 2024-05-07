@@ -8,7 +8,8 @@
     ./modules/basic.nix
     ./modules/basic-gui.nix
     ./modules/dev.nix
-    ./modules/dev-gui.nix
+    ./modules/unstable-packages.nix
+    ./modules/unstable-packages-gui.nix
     ./modules/art-gui.nix
   ];
   nixpkgs.config.allowUnfree = true;

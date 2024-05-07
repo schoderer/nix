@@ -6,10 +6,7 @@ let
    };
 in
 {
-
   home.packages = [
-      unstable-pkgs.vscode
-      unstable-pkgs.jetbrains-toolbox
-    ];
-    
+
+  ];
 }

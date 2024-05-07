@@ -2,12 +2,11 @@
 {
   home.packages = with pkgs; [
     gh
-    distrobox
+    mermaid-cli
     # Tools
     jq
     yq
     tokei
-    hyperfine
 
     # Nix
     nixpkgs-fmt
