@@ -16,6 +16,7 @@
     cargo-watch
     
     # Kubernetes
+    podman
     kubectl
     kubernetes-helm
     k9s
