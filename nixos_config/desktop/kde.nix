@@ -8,15 +8,19 @@
   
 
   # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
-  services.xserver.displayManager.defaultSession = "plasma";
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.defaultSession = "plasma";
 
   # Exclude the following packages:
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     plasma-browser-integration
-    konsole
-    oxygen
+  ];
+
+  programs.kdeconnect.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    kdePackages.partitionmanager
   ];
 
   # Configure keymap in X11
