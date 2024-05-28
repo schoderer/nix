@@ -3,6 +3,7 @@
 
   programs = {
     fish.enable = true;
+    ssh.startAgent = true;
   };
 
 

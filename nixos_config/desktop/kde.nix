@@ -17,8 +17,6 @@
     plasma-browser-integration
   ];
 
-  programs.kdeconnect.enable = true;
-
   environment.systemPackages = with pkgs; [
     kdePackages.partitionmanager
   ];
