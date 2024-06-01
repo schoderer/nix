@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     gh
     mermaid-cli
+    distrobox
     # Tools
     jq
     yq
@@ -16,7 +17,6 @@
     cargo-watch
     
     # Kubernetes
-    podman
     kubectl
     kubernetes-helm
     k9s
