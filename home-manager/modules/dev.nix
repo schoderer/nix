@@ -46,6 +46,5 @@
   home.file = {
     ".minikube/config/config.json".source = ../dotfiles/minikube.json;
     ".config/distrobox/distrobox.conf".source = ../dotfiles/distrobox/distrobox.conf;
-    ".config/distrobox/distrobox-init.sh".source = ../dotfiles/distrobox/distrobox-init.sh;
   };
 }
