@@ -10,4 +10,8 @@
   ];
   networking.hostName = "framework"; # Define your hostname.
   services.printing.enable = false; # Printing suppourt
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  nixpkgs.config.allowUnfree = true;
+  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
 }
