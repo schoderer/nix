@@ -20,5 +20,5 @@ update:
     nix flake update
 
 clean:
-    sudo nix-collect-garbage -d
-    nix-collect-garbage -d
+    sudo nix-collect-garbage -d | grep "freed"
+    nix-collect-garbage -d | grep "freed"
