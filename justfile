@@ -22,3 +22,8 @@ update:
 clean:
     sudo nix-collect-garbage -d | grep "freed"
     nix-collect-garbage -d | grep "freed"
+
+
+
+reset-gnome-cursor:
+    dconf reset /org/gnome/desktop/interface/cursor-theme
