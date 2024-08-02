@@ -13,5 +13,4 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   nixpkgs.config.allowUnfree = true;
-  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
 }
