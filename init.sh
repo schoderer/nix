@@ -12,3 +12,4 @@ flatpak install -y flathub com.prusa3d.PrusaSlicer
 
 flatpak install -y flathub org.inkscape.Inkscape
 flatpak install -y flathub org.kde.krita
+flatpak install -y flathub md.obsidian.Obsidian

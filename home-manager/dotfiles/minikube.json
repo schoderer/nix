@@ -1,5 +1,3 @@
 {
-    //"container-runtime": "containerd",
     "driver": "docker"
-    //"rootless": true
 }
