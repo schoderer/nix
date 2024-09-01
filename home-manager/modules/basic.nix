@@ -9,6 +9,10 @@
 
 
   programs = {
+    neovim = {
+      enable = true;
+      vimAlias = true;
+    };
     ## Fish shell
     fish = {
       enable = true;
@@ -38,7 +42,6 @@
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
     ".config/helix/languages.toml".source = ../dotfiles/helix_languages.toml;
   };
-
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home
