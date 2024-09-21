@@ -3,6 +3,7 @@
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
     # Misc
     firefox
+    zeal
   ];
   fonts.fontconfig.enable = true;
 }
