@@ -37,10 +37,6 @@
       options = "--delete-older-than 1w";
     };
   };
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
 
   # nixpkgs.config.allowUnfree = true;
   # This value determines the NixOS release from which the default
