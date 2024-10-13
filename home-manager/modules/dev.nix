@@ -4,6 +4,7 @@
     gh
     mermaid-cli
     distrobox
+    cookiecutter
     # Tools
     jq
     yq
