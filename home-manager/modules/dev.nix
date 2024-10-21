@@ -16,7 +16,6 @@
 
     # Rust
     cargo-watch
-    
     # Kubernetes
     kubectl
     kubernetes-helm
