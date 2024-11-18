@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     gh
-    mermaid-cli
     distrobox
     cookiecutter
     # Tools

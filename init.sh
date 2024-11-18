@@ -1,7 +1,9 @@
 #!/bin/sh
 # gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
+# Gnome settings
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user
 flatpak install -y flathub com.discordapp.Discord
 

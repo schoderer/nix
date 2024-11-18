@@ -1,5 +1,5 @@
-# theme = "sonokai"
-theme = "nord-night"
+theme = "sonokai"
+# theme = "nord-night"
 [editor]
 line-number = "relative"
 color-modes = true
