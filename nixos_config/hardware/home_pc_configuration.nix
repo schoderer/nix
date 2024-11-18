@@ -8,29 +8,28 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/d2e5f7b8-237a-4001-b8d5-39d8f42b2b47";
+    { device = "/dev/disk/by-uuid/a1d2e7f3-4a7f-4ec6-9807-966fdd7ae65e";
       fsType = "ext4";
     };
+  fileSystems."/games" = 
+  {
+    device = "/dev/disk/by-uuid/dcca29b6-19ab-4b87-868e-bd4e791e4adf";
+    fsType = "ext4";
+  };
 
-  boot.initrd.luks.devices."luks-aa97aea4-7d28-4f76-9b1a-c32ea8a92f8f".device = "/dev/disk/by-uuid/aa97aea4-7d28-4f76-9b1a-c32ea8a92f8f";
+  boot.initrd.luks.devices."luks-cf221f6c-d57c-4f50-80c9-c0927dbb94fa".device = "/dev/disk/by-uuid/cf221f6c-d57c-4f50-80c9-c0927dbb94fa";
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/F29E-A3D9";
+    { device = "/dev/disk/by-uuid/8746-9080";
       fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
+      options = [ "fmask=0077" "dmask=0077" ];
     };
-  fileSystems."/games" =
-  {
-    device = "/dev/disk/by-uuid/a6e8dbef-dfb7-4807-8a9b-dd0c4a4d5316";
-    fsType = "ext4";
-    options = [ "nofail" ];
-  };
 
   swapDevices = [ ];
 
@@ -44,4 +43,3 @@
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
-

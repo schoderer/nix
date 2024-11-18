@@ -1,6 +1,5 @@
 { config, pkgs, ... }: {
   # Custom Programs
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   boot.plymouth.enable = true; # Enable Plymouth, for encrypted boot
