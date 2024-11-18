@@ -8,7 +8,6 @@ in
 {
   home.packages = [
       unstable-pkgs.vscode
-      unstable-pkgs.proton-pass
       unstable-pkgs.jetbrains-toolbox
   ];
 }

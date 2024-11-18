@@ -15,8 +15,10 @@
     xkb.layout = "us";
     xkb.variant = "";
   };
-
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-tour
+  ]);
   environment.systemPackages = with pkgs; [
-    gnome.gnome-software
+    gnome-software
   ];
 }

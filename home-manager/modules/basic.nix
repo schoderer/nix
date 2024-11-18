@@ -9,10 +9,6 @@
 
 
   programs = {
-    neovim = {
-      enable = true;
-      vimAlias = true;
-    };
     ## Fish shell
     fish = {
       enable = true;
@@ -56,6 +52,7 @@
   #
   home.sessionVariables = {
     EDITOR = "hx";
+    KUBE_EDITOR = "hx";
   };
 
   fonts.fontconfig.enable = true;
