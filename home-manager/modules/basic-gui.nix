@@ -4,5 +4,6 @@
     # Misc
     firefox
   ];
+  programs.zed-editor.enable = true;
   fonts.fontconfig.enable = true;
 }
