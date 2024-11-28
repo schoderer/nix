@@ -4,10 +4,10 @@
   home.homeDirectory = "/home/${mainUser}";
 
   imports = [
-    
     ./modules/basic.nix
     ./modules/basic-gui.nix
     ./modules/dev.nix
+    ./modules/dev-gui.nix
     ./modules/unstable-packages.nix
     ./modules/unstable-packages-gui.nix
     ./modules/art-gui.nix
