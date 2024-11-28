@@ -11,7 +11,7 @@
 
     # Nix
     nixpkgs-fmt
-    nil # Nixlanguage server
+    nixd # Nixlanguage server
 
     # Rust
     cargo-watch

@@ -18,6 +18,7 @@
         distro = "distrobox";
         htop = "btop";
         tshell = "nix shell ";
+        zed = "zeditor";
         "+" = "nix shell nixpkgs#";
         diveResult = "dive --source docker-archive (gunzip -c $(readlink result) | psub)";
       };
