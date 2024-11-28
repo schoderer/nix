@@ -6,6 +6,7 @@
     "steam-run"
   ];
   environment.systemPackages = with pkgs; [
+    # Xbox One controller support
     linuxKernel.packages.linux_zen.xone
   ];
   programs.steam = {
