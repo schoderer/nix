@@ -8,25 +8,25 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "ahci" "xhci_pci" "thunderbolt" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/a1d2e7f3-4a7f-4ec6-9807-966fdd7ae65e";
+    { device = "/dev/disk/by-uuid/9c13d805-875f-47c8-a016-b837ff063eee";
       fsType = "ext4";
     };
   fileSystems."/games" = 
-  {
-    device = "/dev/disk/by-uuid/dcca29b6-19ab-4b87-868e-bd4e791e4adf";
-    fsType = "ext4";
-  };
+    {
+      device = "/dev/disk/by-uuid/9c9082b0-7486-4c57-81d0-971e119ccf3b";
+      fsType = "ext4";
+    };
 
-  boot.initrd.luks.devices."luks-cf221f6c-d57c-4f50-80c9-c0927dbb94fa".device = "/dev/disk/by-uuid/cf221f6c-d57c-4f50-80c9-c0927dbb94fa";
+  boot.initrd.luks.devices."luks-c4d2e481-f930-4b24-a20c-ccdf948d635a".device = "/dev/disk/by-uuid/c4d2e481-f930-4b24-a20c-ccdf948d635a";
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/8746-9080";
+    { device = "/dev/disk/by-uuid/DF57-719E";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
@@ -38,7 +38,7 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp42s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp117s0u1u3.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
