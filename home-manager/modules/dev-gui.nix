@@ -9,6 +9,7 @@
       ];
       userSettings = {
         theme = "Andromeda";
+        restore_on_startup = "none";
         hour_format = "hour24";
         auto_update = false;
         autosave= "on_focus_change";
@@ -28,7 +29,7 @@
             provider = "copilot_chat";
             model = "gpt-4o";
           };
-          
+
         };
         telemetry ={
           metrics = false;
