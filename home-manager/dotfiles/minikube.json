@@ -1,4 +1,3 @@
 {
-    "driver": "podman",
-    "rootless": true
+    "driver": "kvm2"
 }
