@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     gh
@@ -19,8 +19,12 @@
     kubectl
     kubernetes-helm
     k9s
-    minikube
     kubie
+
+    # Minikube
+    minikube
+    docker-machine-kvm2 # Minikube driver needed for Nixos
+
   ];
 
   programs = {
