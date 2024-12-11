@@ -7,7 +7,6 @@
     # Tools
     jq
     yq
-    tokei
 
     # Nix
     nixpkgs-fmt
