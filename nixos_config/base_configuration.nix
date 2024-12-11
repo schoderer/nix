@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   # Bootloader.
   boot.initrd.systemd.enable = true;

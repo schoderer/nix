@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   imports = [
     ./base_desktop.nix
   ];
@@ -17,9 +17,4 @@
   environment.systemPackages = with pkgs; [
     kdePackages.partitionmanager
   ];
-  # Configure keymap in X11
-  services.xserver = {
-    xkb.layout = "us";
-    xkb.variant = "";
-  };
 }

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
 
 
   programs = {
@@ -10,9 +10,10 @@
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "plugdev" "docker" "udev"];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "plugdev" "udev"];
     shell = pkgs.fish;
     packages = with pkgs; [
+      appimage-run
     ];
   };
 
@@ -20,8 +21,6 @@
   environment.systemPackages = with pkgs; [
     git
     helix
-    vim
     just
-    appimage-run
   ];
 }
