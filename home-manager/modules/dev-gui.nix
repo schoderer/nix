@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, ... }:
+{ ... }:
 {
   programs.zed-editor = {
       enable = true;

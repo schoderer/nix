@@ -1,7 +1,7 @@
-{ config, pkgs, unstable, system, ... }:
+{ unstable, system, ... }:
 let
   unstable-pkgs = import unstable {
-    inherit system; 
+    inherit system;
     config.allowUnfree = true;
    };
 in
