@@ -6,7 +6,9 @@
     just
     dive
   ];
-
+  home.sessionPath = [
+    "$HOME/scripts"
+  ];
 
   programs = {
     ## Fish shell
