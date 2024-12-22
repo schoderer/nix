@@ -10,6 +10,7 @@
     ./modules/dev-gui.nix
     ./modules/unstable-packages.nix
     ./modules/unstable-packages-gui.nix
+    ./modules/utility.nix
   ];
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.
