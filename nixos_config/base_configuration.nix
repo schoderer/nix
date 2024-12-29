@@ -3,7 +3,7 @@
   # Bootloader.
   boot.initrd.systemd.enable = true;
   boot.loader.systemd-boot.enable = true;
-  boot.loader.timeout = 2;
+  boot.loader.timeout = 1;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
   # Kernel
@@ -38,7 +38,6 @@
     };
   };
 
-  # nixpkgs.config.allowUnfree = true;
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

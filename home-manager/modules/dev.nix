@@ -7,7 +7,8 @@
     # Tools
     jq
     yq
-
+    pkg-config
+    openssl
     # Nix
     nixpkgs-fmt
     nixd # Nixlanguage server

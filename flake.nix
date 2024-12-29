@@ -18,7 +18,7 @@
       mainUser = "michael";
     in
     {
-      
+
       ##
       # Systemconfig
       ##
@@ -38,14 +38,13 @@
             ./nixos_config/framework.nix
           ];
         };
-        dev_server = nixpkgs.lib.nixosSystem {
-          inherit system;
-          specialArgs = { inherit inputs outputs mainUser; };
-          modules = [
-            ./nixos_config/dev_server.nix
-          ];
-        };
-
+        sob = nixpkgs.lib.nixosSystem {
+            inherit system;
+            specialArgs = { inherit inputs outputs mainUser; };
+            modules = [
+              ./nixos_config/sob.nix
+            ];
+          };
       };
 
       ##
