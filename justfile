@@ -5,9 +5,9 @@ rebuild-develop:
     sudo nixos-rebuild switch --flake .#develop
 rebuild-framework:
     sudo nixos-rebuild switch --flake .#framework
-rebuild-dev-server:
-    sudo nixos-rebuild switch --flake .#dev_server
 
+rebuild-sob:
+    sudo nixos-rebuild switch --flake .#sob
 home-manager:
     home-manager switch -b backup --flake .#desktop
 

@@ -1,9 +1,9 @@
 { ... }:
 {
   imports = [
-    ./hardware/home_pc_configuration.nix
+    ./hardware/sob-hardware.nix
     ./base_configuration.nix
-    ./desktop/gnome.nix
+    ./desktop/kde.nix
     ./programs/common.nix
     ./programs/virtualization.nix
     ./programs/gaming.nix
