@@ -14,6 +14,7 @@
     shell = pkgs.fish;
     packages = with pkgs; [
       appimage-run
+      vi
     ];
   };
 
