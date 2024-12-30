@@ -3,7 +3,7 @@
   imports = [
     ./hardware/framework_configuration.nix
     ./base_configuration.nix
-    ./desktop/gnome.nix
+    ./desktop/kde.nix
     ./programs/common.nix
     ./programs/virtualization.nix
     ./programs/gaming.nix
