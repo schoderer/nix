@@ -18,4 +18,5 @@
     kdePackages.partitionmanager
     kdePackages.ksshaskpass
   ];
+  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
 }
