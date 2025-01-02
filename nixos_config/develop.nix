@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./hardware/sob_pc_configuration.nix
+    ./hardware/develop_configuration.nix
     ./base_configuration.nix
     ./desktop/gnome.nix
     ./programs/common.nix

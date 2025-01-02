@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./hardware/sob-hardware.nix
+    ./hardware/sob_configuration.nix
     ./base_configuration.nix
     ./desktop/kde.nix
     ./programs/common.nix
