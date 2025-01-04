@@ -5,6 +5,7 @@
     helix
     just
     dive
+    nil # nix language server
   ];
   home.sessionPath = [
     "$HOME/scripts"
