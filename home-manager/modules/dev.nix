@@ -14,7 +14,7 @@
     nixd # Nixlanguage server
 
     # Rust
-    cargo-watch
+    bacon # Rust code watcher
     # Kubernetes
     kubectl
     kubernetes-helm
