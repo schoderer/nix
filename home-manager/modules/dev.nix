@@ -18,6 +18,7 @@
     # Kubernetes
     kubectl
     kubernetes-helm
+    kubernetes-helmPlugins.helm-diff
     k9s
     kubie
 
