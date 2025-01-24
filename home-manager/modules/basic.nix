@@ -24,6 +24,7 @@
         zed = "zeditor";
         "+" = "nix shell nixpkgs#";
         diveResult = "dive --source docker-archive (gunzip -c $(readlink result) | psub)";
+        kf = "ssh -fN -L 16443:localhost:16443 ";
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
