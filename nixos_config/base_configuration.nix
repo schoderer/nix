@@ -28,6 +28,7 @@
 
   nix = {
     settings = {
+      trusted-users = [ "root" "michael" ];
       experimental-features = [ "nix-command" "flakes" ];
     };
     optimise.automatic = true;

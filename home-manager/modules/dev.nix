@@ -13,6 +13,7 @@
     nixpkgs-fmt
     nixd # Nixlanguage server
 
+    devenv
     # Rust
     bacon # Rust code watcher
     # Kubernetes
