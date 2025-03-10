@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     gh
+    git-lfs
     distrobox
     cookiecutter
     # Tools
@@ -33,12 +34,35 @@
     ## Git
     git = {
       enable = true;
+      lfs.enable = true;
       userName = "Michael Schoderer";
       userEmail = "github.anemic814@passmail.net";
       extraConfig = {
-        init.defaultbranch = "master";
+        init.defaultbranch = "main";
         push.autosetupremote = true;
         pull.rebase = true;
+        column.ui = "auto";
+        commit.gpgsign = true;
+        gpg.format = "ssh";
+        branch.sort = "-committerdate";
+        user.signingkey = "~/.ssh/id_ed25519.pub";
+        tag.sort = "version:refname";
+        diff = {
+          alogrithm = "histogram";
+          colorMoved = "plain";
+          mnemonicPrefix = true;
+          renames = true;
+        };
+        fetch = {
+          prune = true;
+          pruneTags = true;
+          all = true;
+        };
+        rebase = {
+          autoSquash = true;
+          autoStash = true;
+          updateRefs = true;
+        };
       };
     };
     ## Direnv
