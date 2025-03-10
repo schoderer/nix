@@ -29,6 +29,15 @@ home-manager-install CHANNEL:
     nix-channel --update
     nix-shell '<home-manager>' -A install
 
+full-clean:
+    sudo nix-collect-garbage -d
+    nix-collect-garbage -d
+    home-manager expire-generations -d
+    nix store gc
+    sudo nix store optimise
+    sudo nix profile wipe-history
+    home-manager remove-generations old
+
 # Gnome
 setup-gnome:
     gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
