@@ -7,6 +7,6 @@ let
 in
 {
   home.packages = [
-
+    unstable-pkgs.devenv
   ];
 }
