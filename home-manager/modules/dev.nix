@@ -5,17 +5,14 @@
     git-lfs
     distrobox
     cookiecutter
+    patchelf
     # Tools
     jq
     yq
-    pkg-config
-    openssl
     # Nix
     nixpkgs-fmt
     nixd # Nixlanguage server
 
-    # Rust
-    bacon # Rust code watcher
     # Kubernetes
     kubectl
     kubernetes-helm
@@ -26,7 +23,6 @@
     # Minikube
     minikube
     docker-machine-kvm2 # Minikube driver needed for Nixos
-
   ];
 
   programs = {
