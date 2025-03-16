@@ -13,6 +13,9 @@
     nixpkgs-fmt
     nixd # Nixlanguage server
 
+    # Profiling
+    samply
+    hyperfine
     # Kubernetes
     kubectl
     kubernetes-helm
