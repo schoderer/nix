@@ -6,6 +6,8 @@
     just
     dive
     nil # nix language server
+
+    zellij # Terminal Multiplexer
   ];
   home.sessionPath = [
     "$HOME/scripts"
