@@ -42,6 +42,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/zellij/config.kdl".source = ../dotfiles/zellij.kdl;
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
     ".config/helix/languages.toml".source = ../dotfiles/helix_languages.toml;
   };
