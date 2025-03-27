@@ -22,10 +22,8 @@
     kubernetes-helmPlugins.helm-diff
     k9s
     kubie
+    kind
 
-    # Minikube
-    minikube
-    docker-machine-kvm2 # Minikube driver needed for Nixos
   ];
 
   programs = {
