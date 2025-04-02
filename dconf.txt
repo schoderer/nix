@@ -1,0 +1,391 @@
+[org/gnome/Console]
+last-window-maximised=false
+last-window-size=(1361, 856)
+
+[org/gnome/Disks]
+image-dir-uri='file:///home/michael/Downloads'
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Munich', 'EDDM', false, [(0.84386669333925834, 0.20565795770890102)], @a(dd) [])>)>]
+
+[org/gnome/baobab/ui]
+is-maximized=true
+window-size=(960, 600)
+
+[org/gnome/control-center]
+last-panel='background'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus', '31bed0e9-4da5-4b29-a466-98ea898cd1f0', '17befa70-8b48-43ca-a92f-9bb8871296e4', '5053633c-4c3b-4666-8edd-e16aa59950c7']
+
+[org/gnome/desktop/app-folders/folders/17befa70-8b48-43ca-a92f-9bb8871296e4]
+apps=['org.kicad.KiCad.desktop', 'org.freecad.FreeCAD.desktop', 'com.prusa3d.PrusaSlicer.desktop', 'org.kicad.KiCad.gerbview.desktop', 'org.kicad.KiCad.pcbnew.desktop', 'org.kicad.KiCad.eeschema.desktop', 'org.kicad.KiCad.bitmap2component.desktop', 'org.kicad.KiCad.pcbcalculator.desktop', 'com.prusa3d.PrusaSlicer.GCodeViewer.desktop']
+name='Design'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/31bed0e9-4da5-4b29-a466-98ea898cd1f0]
+apps=['steam.desktop', 'com.discordapp.Discord.desktop', 'com.usebottles.bottles.desktop', 'com.heroicgameslauncher.hgl.desktop']
+name='Internet'
+
+[org/gnome/desktop/app-folders/folders/5053633c-4c3b-4666-8edd-e16aa59950c7]
+apps=['jetbrains-toolbox.desktop', 'code.desktop', 'dev.zed.Zed.desktop', 'virt-manager.desktop', 'com.usebruno.Bruno.desktop', 'com.emqx.MQTTX.desktop', 'jetbrains-rustrover-cadf9dea-26a6-4fb4-9d12-b070c067743d.desktop', 'com.google.Chrome.desktop', 'jetbrains-webstorm-4abc5474-31c1-40a9-bdbe-02ccd1d2c130.desktop']
+name='Dev'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.gnome.Software.desktop', 'nixos-manual.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Settings.desktop', 'simple-scan.desktop', 'Helix.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Totem.desktop', 'fish.desktop', 'org.gnome.Extensions.desktop', 'yelp.desktop', 'org.gnome.TextEditor.desktop', 'vim.desktop', 'xterm.desktop', 'org.gnome.Maps.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Contacts.desktop', 'btop.desktop', 'org.gnome.Music.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Epiphany.desktop', 'org.videolan.VLC.desktop', 'vlc.desktop']
+categories=['X-GNOME-Utilities']
+excluded-apps=['virt-manager.desktop']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///nix/store/0iy39dcf1vxj4iiiwm21ik7p0wmx833w-nineish-dark-gray-2020-07-02/share/backgrounds/nixos/nix-wallpaper-nineish-dark-gray.png'
+picture-uri-dark='file:///home/michael/.config/background'
+primary-color='#151515'
+secondary-color='#262626'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'us')]
+xkb-options=['terminate:ctrl_alt_bksp']
+
+[org/gnome/desktop/interface]
+accent-color='red'
+color-scheme='prefer-dark'
+cursor-size=24
+cursor-theme='Adwaita'
+enable-animations=true
+font-name='Noto Sans,  10'
+gtk-theme='Qogir'
+icon-theme='Adwaita'
+scaling-factor=uint32 1
+text-scaling-factor=1.0
+toolbar-style='text'
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-console', 'firefox', 'steam', 'com-prusa3d-prusaslicer', 'gnome-power-panel', 'org-gnome-nautilus', 'com-discordapp-discord', 'org-gnome-software', 'com-heroicgameslauncher-hgl', 'com-usebottles-bottles', 'net-lutris-lutris', 'org-gnome-settings', 'jetbrains-toolbox', 'org-gnome-extensions', 'org-gnome-baobab', 'dev-zed-zed', 'org-gnome-texteditor']
+
+[org/gnome/desktop/notifications/application/com-discordapp-discord]
+application-id='com.discordapp.Discord.desktop'
+
+[org/gnome/desktop/notifications/application/com-heroicgameslauncher-hgl]
+application-id='com.heroicgameslauncher.hgl.desktop'
+
+[org/gnome/desktop/notifications/application/com-prusa3d-prusaslicer]
+application-id='com.prusa3d.PrusaSlicer.desktop'
+
+[org/gnome/desktop/notifications/application/com-usebottles-bottles]
+application-id='com.usebottles.bottles.desktop'
+
+[org/gnome/desktop/notifications/application/dev-zed-zed]
+application-id='dev.zed.Zed.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/jetbrains-toolbox]
+application-id='jetbrains-toolbox.desktop'
+
+[org/gnome/desktop/notifications/application/net-lutris-lutris]
+application-id='net.lutris.Lutris.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-texteditor]
+application-id='org.gnome.TextEditor.desktop'
+
+[org/gnome/desktop/notifications/application/steam]
+application-id='steam.desktop'
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 14
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+lock-delay=uint32 0
+picture-options='zoom'
+picture-uri='file:///nix/store/0iy39dcf1vxj4iiiwm21ik7p0wmx833w-nineish-dark-gray-2020-07-02/share/backgrounds/nixos/nix-wallpaper-nineish-dark-gray.png'
+primary-color='#151515'
+secondary-color='#262626'
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/epiphany]
+ask-for-default=false
+
+[org/gnome/epiphany/state]
+is-maximized=true
+window-size=(2560, 1408)
+
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=182
+sizing-mode='free'
+window-ratio=(1.4252100840336135, 0.90142517814726841)
+zoom=1.0735999999999999
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=941
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=1491
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/list-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(1288, 812)
+maximized=false
+
+[org/gnome/nm-applet]
+disable-connected-notifications=true
+
+[org/gnome/portal/filechooser/com.discordapp.Discord]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/portal/filechooser/com.heroicgameslauncher.hgl]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/portal/filechooser/com.usebottles.bottles]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/portal/filechooser/com.usebruno.Bruno]
+last-folder-path='/home/michael/projects/bruno'
+
+[org/gnome/portal/filechooser/firefox]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/portal/filechooser/net.lutris.Lutris]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/portal/filechooser/steam]
+last-folder-path='/home/michael/Downloads'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
+power-button-action='interactive'
+sleep-inactive-ac-timeout=5400
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=900
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
+
+[org/gnome/shell]
+app-picker-layout=[{'31bed0e9-4da5-4b29-a466-98ea898cd1f0': <{'position': <0>}>, '17befa70-8b48-43ca-a92f-9bb8871296e4': <{'position': <1>}>, '5053633c-4c3b-4666-8edd-e16aa59950c7': <{'position': <2>}>, 'Utilities': <{'position': <3>}>}]
+disable-user-extensions=false
+disabled-extensions=['dock-from-dash@fthx']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'emoji-copy@felipeftn', 'display-brightness-ddcutil@themightydeity.github.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Console.desktop']
+last-selected-power-profile='power-saver'
+welcome-dialog-last-shown-version='47.1'
+
+[org/gnome/shell/extensions/dash-to-dock]
+background-opacity=0.80000000000000004
+custom-theme-shrink=true
+dash-max-icon-size=40
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='DP-2'
+running-indicator-style='DOTS'
+
+[org/gnome/shell/extensions/trayIconsReloaded]
+icon-padding-horizontal=0
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Munich', 'EDDM', false, [(0.84386669333925834, 0.20565795770890102)], @a(dd) [])>)>]
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1742893723
+first-run=false
+flatpak-purge-timestamp=int64 1742888482
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=false
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=166
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(2585, 987)
+window-size=(1231, 902)
+
+[org/nemo/window-state]
+geometry='800x550+1998+836'
+maximized=false
+sidebar-bookmark-breakpoint=4
+start-with-sidebar=true
+
+[org/virt-manager/virt-manager]
+manager-window-height=550
+manager-window-width=550
+
+[org/virt-manager/virt-manager/confirm]
+delete-storage=false
+forcepoweroff=true
+unapplied-dev=false
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/conns/qemu:system]
+window-size=(800, 600)
+
+[org/virt-manager/virt-manager/details]
+show-toolbar=true
+
+[org/virt-manager/virt-manager/paths]
+media-default='/home/michael/Downloads'
+
+[org/virt-manager/virt-manager/urls]
+isos=['/home/michael/Downloads/ubuntu-22.04.5-live-server-amd64.iso']
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
+
+[org/virt-manager/virt-manager/vms/11dc91f4145b4ae88a185d9b0e359e5d]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/28b5d873832f4e51b02569cd5001d6a8]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/5cbbb14c905145c1b382cb38ca55bd05]
+autoconnect=1
+vm-window-size=(830, 869)
+
+[org/virt-manager/virt-manager/vms/76f8a3b65b1b414ca5a8809c4a757c50]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/8643070d00cf4de89caafb82c63f76c7]
+autoconnect=1
+vm-window-size=(948, 842)
+
+[org/virt-manager/virt-manager/vms/899fbe1d4f7648b7a782a00a540ba24e]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/8c615be3278346f99f87b787a5c03c49]
+autoconnect=1
+vm-window-size=(1280, 869)
+
+[org/virt-manager/virt-manager/vms/9167536ab6394e2f909c9be545a72859]
+autoconnect=1
+vm-window-size=(1280, 869)
+
+[org/virt-manager/virt-manager/vms/a62f6363a0ee47d382bf4cf980a7a739]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/c3880e0b60e043e5899a7852b18ecf80]
+autoconnect=1
+vm-window-size=(1280, 869)
+
+[org/virt-manager/virt-manager/vms/cbe3d0295af04525be4b2f73c62e6be6]
+autoconnect=1
+vm-window-size=(1173, 842)
+
+[org/virt-manager/virt-manager/vms/d408e76ae88c4cc68a877e4434f9e47c]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/d8b15014a05c47cc95028a832d62eb3e]
+autoconnect=1
+vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/e7280adfbee74af1ad6e02c9195fa761]
+autoconnect=1
+vm-window-size=(788, 842)

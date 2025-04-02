@@ -2,6 +2,8 @@
   home.packages = with pkgs; [
     gnomeExtensions.dash-to-dock
     gnomeExtensions.tray-icons-reloaded
+    # Themeing
+    adwaita-icon-theme
   ];
   dconf.settings = {
     "org/gnome/shell" = {
@@ -15,6 +17,13 @@
     "org/gnome/shell/extensions/trayIconsReloaded" = {
       icon-padding-horizontal=0;
     };
+    "org/gnome/desktop/interface" = {
+      color-scheme="prefer-dark";
+      cursor-size=24;
+      cursor-theme="Adwaita";
+      icon-theme="Adwaita";
+    };
+
 
     "org/gnome/shell/extensions/dash-to-dock" = {
       background-opacity=0.8;
