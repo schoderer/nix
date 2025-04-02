@@ -3,7 +3,7 @@
   imports = [
     ./hardware/develop_configuration.nix
     ./base_configuration.nix
-    ./desktop/budgie.nix
+    ./desktop/gnome.nix
     ./programs/common.nix
     ./programs/virtualization.nix
     ./programs/gaming.nix
