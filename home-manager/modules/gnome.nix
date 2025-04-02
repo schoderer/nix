@@ -10,8 +10,7 @@
       disable-user-extensions = false;
       enabled-extensions = [
         "dash-to-dock@micxgx.gmail.com"
-        "emoji-copy@felipeftn"
-        "display-brightness-ddcutil@themightydeity.github.com"
+        "trayIconsReloaded@selfmade.pl"
       ];
     };
     "org/gnome/shell/extensions/trayIconsReloaded" = {
