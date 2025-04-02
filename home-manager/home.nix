@@ -6,6 +6,7 @@
   imports = [
     ./modules/basic.nix
     ./modules/basic-gui.nix
+    ./modules/gnome.nix
     ./modules/dev.nix
     ./modules/dev-gui.nix
     ./modules/unstable-packages.nix
