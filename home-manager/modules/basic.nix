@@ -6,6 +6,7 @@
     just
     dive
     nil # nix language server
+    cyme # lsusb alternative
 
     zellij # Terminal Multiplexer
   ];
