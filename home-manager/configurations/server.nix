@@ -5,9 +5,9 @@
   home.homeDirectory = "/home/${mainUser}";
 
   imports = [
-    ./modules/basic.nix
-    ./modules/dev.nix
-    ./modules/server.nix
+    ../modules/basic.nix
+    ../modules/dev.nix
+    ../modules/server.nix
   ];
   nixpkgs.config.allowUnfree = true;
   # Let Home Manager install and manage itself.

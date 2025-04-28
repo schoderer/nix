@@ -3,10 +3,10 @@
   imports = [
     ./hardware/sob_configuration.nix
     ./base_configuration.nix
-    ./desktop/gnome.nix
-    ./programs/common.nix
-    ./programs/virtualization.nix
-    ./programs/gaming.nix
+    ../desktop/gnome.nix
+    ../programs/common.nix
+    ../programs/virtualization.nix
+    ../programs/gaming.nix
   ];
   networking.hostName = "sob"; # Define your hostname.
   networking.wireless.enable = false; # Enables wireless support via wpa_supplicant.
