@@ -6,10 +6,6 @@ default:
 update:
     nix flake update
 
-clean:
-    sudo nix-collect-garbage -d | grep "freed"
-    nix-collect-garbage -d | grep "freed"
-
 # base os rebuild
 rebuild-develop:
     sudo nixos-rebuild switch --flake .#develop
@@ -21,8 +17,7 @@ rebuild-sob:
 # home-manager
 home-manager:
     home-manager switch -b backup --flake .#desktop
-home-manager-server:
-    home-manager switch -b backup --flake .#server
+
 # Call with channel like `just home-manager-install 24.11`
 home-manager-install CHANNEL:
     nix-channel --add https://github.com/nix-community/home-manager/archive/release-{{CHANNEL}}.tar.gz home-manager
