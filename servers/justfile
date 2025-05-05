@@ -1,2 +1,5 @@
+default:
+    just --list
+
 format:
     sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount {{ justfile_directory() }}/hddlayouts/single-ext4.nix
