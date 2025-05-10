@@ -18,6 +18,7 @@
     samply
     hyperfine
     # Kubernetes
+    minikube
     kubectl
     kubernetes-helm
     kubernetes-helmPlugins.helm-diff

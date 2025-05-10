@@ -1,3 +1,5 @@
 {
-    "driver": "kvm2"
+    "driver": "podman",
+    "rootless": true,
+    "container-runtime": "containerd"
 }
