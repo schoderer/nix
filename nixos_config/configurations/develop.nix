@@ -7,6 +7,7 @@
     ../programs/common.nix
     ../programs/virtualization.nix
     ../programs/gaming.nix
+    ../desktop/hardware.nix
   ];
   networking.hostName = "nixos"; # Define your hostname.
   networking.wireless.enable = false; # Enables wireless support via wpa_supplicant.

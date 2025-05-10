@@ -7,6 +7,7 @@
     ../programs/common.nix
     ../programs/virtualization.nix
     ../programs/gaming.nix
+    ../desktop/hardware.nix
   ];
   networking.hostName = "framework"; # Define your hostname.
   services.printing.enable = false; # Printing suppourt
