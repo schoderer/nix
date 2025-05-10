@@ -6,4 +6,6 @@ in {
   services.udev.extraRules = ''
     ${probe_rs_rules}
   '';
+  users.groups.plugdev = {};
+  users.extraGroups.plugdev.members = [ "michael" ];
 }

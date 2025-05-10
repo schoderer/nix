@@ -14,11 +14,10 @@
     };
   };
 
-
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "plugdev" "udev"];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       appimage-run
