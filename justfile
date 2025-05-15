@@ -17,7 +17,8 @@ rebuild-framework:
     sudo nixos-rebuild switch --flake .#framework
 rebuild-sob:
     sudo nixos-rebuild switch --flake .#sob
-
+rebuild-hypr:
+    sudo nixos-rebuild switch --flake .#hyprland
 # home-manager
 home-manager:
     home-manager switch -b backup --flake .#desktop
