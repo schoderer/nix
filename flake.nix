@@ -45,6 +45,13 @@
               ./nixos_config/configurations/sob.nix
             ];
           };
+        hyprland = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs outputs mainUser;};
+          modules = [
+            ./nixos_config/configurations/hyprland.nix
+          ];
+        };
       };
 
       ##
