@@ -3,7 +3,7 @@
   imports = [
     ./hardware/develop_configuration.nix
     ./base_configuration.nix
-    ../desktop/kde.nix
+    ../desktop/gnome.nix
     ../programs/common.nix
     ../programs/virtualization.nix
     ../programs/gaming.nix
@@ -13,4 +13,7 @@
   networking.wireless.enable = false; # Enables wireless support via wpa_supplicant.
   services.printing.enable = false; # Printing suppourt
   nixpkgs.config.allowUnfree = true;
+
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true; 
 }
