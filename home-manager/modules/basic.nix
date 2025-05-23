@@ -7,6 +7,8 @@
     dive
     nil # nix language server
     cyme # lsusb alternative
+    tldr # man compacted
+
     fastfetch
     zellij # Terminal Multiplexer
   ];
