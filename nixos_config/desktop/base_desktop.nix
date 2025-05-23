@@ -1,6 +1,6 @@
 { ... }: {
   # Custom Programs
-  hardware.pulseaudio.enable = false;
+  # services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   boot.plymouth.enable = true; # Enable Plymouth, for encrypted boot
 

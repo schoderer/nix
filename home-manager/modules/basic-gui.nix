@@ -1,15 +1,7 @@
-{ pkgs, ...}:
-let
-    libbluray = pkgs.libbluray.override {
-        withAACS = true;
-        withBDplus = true;
-        withJava = true;
-    };
-    vlc = pkgs.vlc.override {inherit libbluray; };
-in
-{
-  home.packages = with pkgs; [
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+{ pkgs, ...}: {
+  home.packages = with pkgs;[
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
     alacritty
     # Misc
     firefox

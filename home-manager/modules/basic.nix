@@ -7,7 +7,7 @@
     dive
     nil # nix language server
     cyme # lsusb alternative
-
+    fastfetch
     zellij # Terminal Multiplexer
   ];
   home.sessionPath = [
