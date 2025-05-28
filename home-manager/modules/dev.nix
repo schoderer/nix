@@ -2,11 +2,7 @@
 {
   home.packages = with pkgs; [
     gh
-    git-lfs
-    lazygit
-    distrobox
     cookiecutter
-    patchelf
     # Tools
     jq
     yq
@@ -14,9 +10,6 @@
     nixpkgs-fmt
     nixd # Nixlanguage server
 
-    # Profiling
-    samply
-    hyperfine
     # Kubernetes
     minikube
     kubectl
@@ -24,8 +17,6 @@
     kubernetes-helmPlugins.helm-diff
     k9s
     kubie
-    kind
-
   ];
 
   programs = {
