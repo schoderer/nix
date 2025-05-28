@@ -22,14 +22,9 @@
       enable = true;
       shellAbbrs = {
         k = "kubectl";
-        kctx = "kubie ctx";
-        distro = "distrobox";
         htop = "btop";
-        tshell = "nix shell ";
-        zed = "zeditor";
         "+" = "nix shell nixpkgs#";
         diveResult = "dive --source docker-archive (gunzip -c $(readlink result) | psub)";
-        kf = "ssh -fN -L 16443:localhost:16443 ";
       };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
@@ -48,6 +43,7 @@
     ".config/zellij/config.kdl".source = ../dotfiles/zellij.kdl;
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
     ".config/helix/languages.toml".source = ../dotfiles/helix_languages.toml;
+    ".config/containers/policy.json".source = ../dotfiles/containers_policy.json;
   };
 
   # Home Manager can also manage your environment variables through
