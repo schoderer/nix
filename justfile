@@ -11,24 +11,21 @@ clean:
     nix-collect-garbage -d | grep "freed"
 
 # base os rebuild
-rebuild-develop:
-    sudo nixos-rebuild switch --flake .#develop
-rebuild-framework:
-    sudo nixos-rebuild switch --flake .#framework
-rebuild-sob:
-    sudo nixos-rebuild switch --flake .#sob
+# rebuild-develop:
+#    sudo nixos-rebuild switch --flake .#develop
+#rebuild-framework:
+#    sudo nixos-rebuild switch --flake .#framework
+#rebuild-sob:
+#    sudo nixos-rebuild switch --flake .#sob
 
 # home-manager
 home-manager:
     home-manager switch -b backup --flake .#desktop
-home-manager-server:
-    home-manager switch -b backup --flake .#server
-# Call with channel like `just home-manager-install 24.11`
+#home-manager-server:
+#    home-manager switch -b backup --flake .#server
+# Call with channel like `just home-manager-install 24.11` || 'just home-manager-install master'
 home-manager-install CHANNEL:
-    nix-channel --add https://github.com/nix-community/home-manager/archive/release-{{CHANNEL}}.tar.gz home-manager
-    nix-channel --update
-    nix-shell '<home-manager>' -A install
-
+    nix run home-manager/{{ CHANNEL }} -- init --switch
 full-clean:
     sudo nix-collect-garbage -d
     nix-collect-garbage -d
@@ -45,7 +42,6 @@ setup-gnome:
 # Flatpak
 flatpak-install:
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user
-    flatpak install -y flathub com.discordapp.Discord
     flatpak install -y flathub org.kicad.KiCad
     flatpak install -y flathub org.freecadweb.FreeCAD
     flatpak install -y flathub com.prusa3d.PrusaSlicer
