@@ -27,12 +27,9 @@ home-manager:
 home-manager-install CHANNEL:
     nix run home-manager/{{ CHANNEL }} -- init --switch
 full-clean:
-    sudo nix-collect-garbage -d
-    nix-collect-garbage -d
     home-manager expire-generations -d
     nix store gc
-    sudo nix store optimise
-    sudo nix profile wipe-history
+    nix store optimise
     home-manager remove-generations old
 
 # Gnome
