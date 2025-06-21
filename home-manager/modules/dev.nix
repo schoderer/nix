@@ -17,6 +17,10 @@
     kubernetes-helmPlugins.helm-diff
     k9s
     kubie
+
+
+    #dotnet
+    dotnet-sdk_9
   ];
 
   programs = {

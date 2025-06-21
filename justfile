@@ -1,14 +1,16 @@
 default:
     just --list
 
-
 # Lockfile update
 update:
     nix flake update
 
 clean:
-    sudo nix-collect-garbage -d | grep "freed"
     nix-collect-garbage -d | grep "freed"
+    home-manager expire-generations -d
+    nix store gc
+    nix store optimise
+    home-manager remove-generations old
 
 # base os rebuild
 # rebuild-develop:
@@ -21,17 +23,9 @@ clean:
 # home-manager
 home-manager:
     home-manager switch -b backup --flake .#desktop
-#home-manager-server:
-#    home-manager switch -b backup --flake .#server
 # Call with channel like `just home-manager-install 24.11` || 'just home-manager-install master'
 home-manager-install CHANNEL:
     nix run home-manager/{{ CHANNEL }} -- init --switch
-full-clean:
-    home-manager expire-generations -d
-    nix store gc
-    nix store optimise
-    home-manager remove-generations old
-
 # Gnome
 setup-gnome:
     gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
