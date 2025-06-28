@@ -37,3 +37,4 @@ flatpak-install:
     flatpak install -y flathub org.freecadweb.FreeCAD
     flatpak install -y flathub com.prusa3d.PrusaSlicer
     flatpak install -y flathub md.obsidian.Obsidian
+    flatpak install -y flathub com.valvesoftware.Steam

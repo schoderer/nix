@@ -20,7 +20,7 @@
 
 
     #dotnet
-    dotnet-sdk_9
+    dotnet-sdk
   ];
 
   programs = {
