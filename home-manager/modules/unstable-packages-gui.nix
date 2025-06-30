@@ -7,9 +7,6 @@ let
 in
 {
   home.packages = [
-      unstable-pkgs.pulseview
       unstable-pkgs.vscode
-      unstable-pkgs.jetbrains-toolbox
-      unstable-pkgs.sigrok-cli
   ];
 }

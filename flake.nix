@@ -18,35 +18,6 @@
       mainUser = "michael";
     in
     {
-
-      ##
-      # Systemconfig
-      ##
-      nixosConfigurations = {
-        develop = nixpkgs.lib.nixosSystem {
-          inherit system;
-          specialArgs = { inherit inputs outputs mainUser; };
-          modules = [
-            ./nixos_config/configurations/develop.nix
-          ];
-        };
-        framework = nixpkgs.lib.nixosSystem {
-          inherit system;
-          specialArgs = { inherit inputs outputs mainUser; };
-          modules = [
-            nixos-hardware.nixosModules.framework-13-7040-amd
-            ./nixos_config/configurations/framework.nix
-          ];
-        };
-        sob = nixpkgs.lib.nixosSystem {
-            inherit system;
-            specialArgs = { inherit inputs outputs mainUser; };
-            modules = [
-              ./nixos_config/configurations/sob.nix
-            ];
-          };
-      };
-
       ##
       # Homemanagerconfig
       ##

@@ -8,6 +8,7 @@
     nil # nix language server
     cyme # lsusb alternative
     tldr # man compacted
+    rclone
 
     fastfetch
     zellij # Terminal Multiplexer

@@ -1,5 +1,0 @@
-default:
-    just --list
-
-format-h3k:
-    sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ./h3k-partition-layout.nix
