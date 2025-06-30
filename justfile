@@ -30,5 +30,6 @@ flatpak-install:
     flatpak install --user -y flathub md.obsidian.Obsidian
     flatpak install --user -y flathub com.valvesoftware.Steam
     flatpak override --user --filesystem=/games com.valvesoftware.Steam
+    flatpak install --user -y flathub com.heroicgameslauncher.hgl
     flatpak install --user -y flathub com.discordapp.Discord
     flatpak install --user -y flathub org.darktable.Darktable
