@@ -20,7 +20,8 @@ home-manager-install CHANNEL:
 # Gnome
 setup-gnome:
     gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
-
+    
+    
 # Flatpak
 flatpak-install:
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user
