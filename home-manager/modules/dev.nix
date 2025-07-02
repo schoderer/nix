@@ -9,6 +9,7 @@
     # Nix
     nixpkgs-fmt
     nixd # Nixlanguage server
+    tokei
 
     # Kubernetes
     minikube

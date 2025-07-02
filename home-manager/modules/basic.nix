@@ -9,6 +9,7 @@
     cyme # lsusb alternative
     tldr # man compacted
     rclone
+    bat
     
 
     fastfetch
