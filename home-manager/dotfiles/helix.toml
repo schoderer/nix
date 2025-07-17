@@ -10,4 +10,3 @@ text-width = 120
 
 [keys.insert]
 "A-q" = "normal_mode"
-
