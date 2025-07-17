@@ -1,9 +1,13 @@
-theme = "sonokai"
+theme = "kanagawa"
 # theme = "nord-night"
+
 [editor]
 line-number = "relative"
 color-modes = true
 true-color = true
+bufferline = "multiple"
+text-width = 120
+
 [keys.insert]
 "A-q" = "normal_mode"
 
