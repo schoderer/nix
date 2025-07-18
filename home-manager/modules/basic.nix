@@ -6,6 +6,9 @@
     just
     dive
     nil # nix language server
+    bash-language-server
+    ruff # python language server
+    marksman # markdown language server
     cyme # lsusb alternative
     tldr # man compacted
     rclone
@@ -43,6 +46,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/zellij/layouts/rust.kdl".source = ../dotfiles/zellij-layouts/rust.kdl;
     ".config/zellij/config.kdl".source = ../dotfiles/zellij.kdl;
     ".config/helix/config.toml".source = ../dotfiles/helix.toml;
     ".config/helix/languages.toml".source = ../dotfiles/helix_languages.toml;
