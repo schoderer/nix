@@ -7,6 +7,5 @@ let
 in
 {
   home.packages = [
-      unstable-pkgs.vscode
   ];
 }
