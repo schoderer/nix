@@ -13,7 +13,7 @@
     tldr # man compacted
     rclone
     bat
-    
+    eza
 
     fastfetch
     zellij # Terminal Multiplexer
