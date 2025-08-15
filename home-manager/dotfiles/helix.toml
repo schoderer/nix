@@ -8,5 +8,8 @@ true-color = true
 bufferline = "multiple"
 text-width = 120
 
+[keys.normal]
+
 [keys.insert]
 "A-q" = "normal_mode"
+
