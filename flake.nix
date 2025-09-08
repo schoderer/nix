@@ -8,32 +8,24 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = { self, nixpkgs, unstable, home-manager, nixos-hardware, ... } @ inputs:
+  outputs = { self, nixpkgs, unstable, home-manager, ... } @ inputs:
     let
-      inherit (self) outputs;
       system = "x86_64-linux";
-      mainUser = "michael";
+      pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       ##
       # Homemanagerconfig
       ##
       homeConfigurations = {
-        desktop = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser system unstable; };
+        michaelDesktop = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = { inherit inputs; };
           modules = [
-            ./home-manager/configurations/home.nix
-          ];
-        };
-        server = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = { inherit inputs outputs mainUser system unstable; };
-          modules = [
-            ./home-manager/configurations/server.nix
+            ./configurations/homeManager/michael_desktop.nix
+            ./homeManagerModules            
           ];
         };
       };
