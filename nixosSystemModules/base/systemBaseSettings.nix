@@ -78,8 +78,8 @@
     };
 
 
-    hardware.bluetooth.enable = ${config.systemconfig.base.enableBluetooth};
-    hardware.bluetooth.powerOnBoot = ${config.systemconfig.base.enableBluetooth};
-    networking.wireless.enable = ${config.systemconfig.base.enableWifi};
+    hardware.bluetooth.enable = config.systemconfig.base.enableBluetooth;
+    hardware.bluetooth.powerOnBoot = config.systemconfig.base.enableBluetooth;
+    networking.wireless.enable = config.systemconfig.base.enableWifi;
   };
 }
