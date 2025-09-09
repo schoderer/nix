@@ -1,4 +1,4 @@
-{ pkgs, lib, config, pkgs, ... }: {
+{ pkgs, lib, config, ... }: {
   options.systemconfig.desktop.gnome = {
     enable = lib.mkEnableOption "gnome desktop";
   };
