@@ -19,15 +19,16 @@
       #######################
       # Systemconfiguration
       #######################
-      develop = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./configurations/hosts/develop
-          ./nixosSystemModules
-        ];
+      nixosConfigurations = {
+        develop = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configurations/hosts/develop
+            ./nixosSystemModules
+          ];
+        };
       };
-
       #######################
       # Homemanagerconfig
       #######################

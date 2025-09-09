@@ -3,11 +3,16 @@ default:
 update:
     nix flake update
 clean:
-    nix-collect-garbage -d | grep "freed"
+    sudo nix-collect-garbage -d
+    nix-collect-garbage -d
     home-manager expire-generations -d
     nix store gc
     nix store optimise
     home-manager remove-generations old
+
+
+rebuild-develop:
+    sudo nixos-rebuild switch --flake .#develop
 
 home-manager:
     home-manager switch -b backup --flake .#michaelDesktop
