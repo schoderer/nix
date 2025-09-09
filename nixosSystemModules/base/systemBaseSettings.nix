@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   options.systemconfig.base = {
     enable = lib.mkOption {
@@ -35,7 +35,7 @@
 
     networking = {
       networkmanager.enable = true;
-      hostName = "${config.systemconfig.base.hostName}";
+      hostName = config.systemconfig.base.hostName;
     };
 
     # Set your time zone.
