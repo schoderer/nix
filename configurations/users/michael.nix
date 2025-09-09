@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  programs.fish.enable = true;
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
@@ -8,4 +9,5 @@
       appimage-run
     ];
   };
+
 }
