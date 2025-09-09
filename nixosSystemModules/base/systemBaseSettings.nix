@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
 {
   options.systemconfig.base = {
     enable = lib.mkOption {
