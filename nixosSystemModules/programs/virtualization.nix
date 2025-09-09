@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, lib, config, ... }: {
   options.systemconfig.programs.virtualization = {
     enable = lib.mkEnableOption "virtualizations programs";
   };

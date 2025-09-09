@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, config, ... }: {
   options.systemconfig.programs.gaming.steam = {
     enable = lib.mkEnableOption "steam";
   };

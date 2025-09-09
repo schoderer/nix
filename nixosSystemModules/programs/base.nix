@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, lib, config, ... }: {
   options.systemconfig.programs.base = {
     enable = lib.mkEnableOption "base programs";
   };

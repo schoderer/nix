@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, config, pkgs, ... }: {
   options.systemconfig.desktop.kde = {
     enable = lib.mkEnableOption "kde desktop";
   };
