@@ -1,5 +1,5 @@
 { pkgs, lib, config, ...}: {
-  options.base = {
+  options.homeconfig.base = {
     enable = lib.mkOption {
       type = lib.types.bool;
       default = true;
@@ -13,7 +13,7 @@
       description = "Default terminal editor to use";
     };
   };
-    config = lib.mkIf config.base.enable {
+    config = lib.mkIf config.homeconfig.base.enable {
       home.packages = with pkgs; [
         helix
         ripgrep
@@ -40,7 +40,7 @@
     #
     #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
     home.sessionVariables = {
-      EDITOR = "${config.base.defaultEditor}";
+      EDITOR = "${config.homeconfig.base.defaultEditor}";
     };
   };
 }

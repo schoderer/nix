@@ -1,8 +1,8 @@
 { pkgs, lib, config, ...}: {
-  options.fish-shell = {
-    enable = lib.mkEnableOption "fish-shell";
+  options.homeconfig.fishShell = {
+    enable = lib.mkEnableOption "fishShell";
   };
-  config = lib.mkIf config.fish-shell.enable {
+  config = lib.mkIf config.homeconfig.fishShell.enable {
     programs.fish = {
       enable = true;
       shellAbbrs = {
