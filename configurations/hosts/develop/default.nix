@@ -12,6 +12,7 @@
     };
     desktop.gnome.enable = true;
     programs = {
+      base.enable = true;
       gaming = {
         steam.enable = true;
       };
