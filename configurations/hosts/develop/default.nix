@@ -6,7 +6,7 @@
   systemconfig = {
     base = {
       enable = true;
-      hostname = "develop";
+      hostName = "develop";
       enableBluetooth = true;
       enableWifi = false;
     };
