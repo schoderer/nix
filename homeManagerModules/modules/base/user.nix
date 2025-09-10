@@ -1,5 +1,5 @@
 { pkgs, lib, config, ...}: {
-  options.user = {
+  options.homeconfig.user = {
     username = lib.mkOption {
       type = lib.types.str;
       example = "user";
@@ -7,10 +7,10 @@
       apply = lib.strings.toLower;
     };
   };
-  config = lib.mkIf ((builtins.stringLength config.user.username) > 0) {
+  config = lib.mkIf ((builtins.stringLength config.homeconfig.user.username) > 0) {
     home = {
-      username = "${config.user.username}";
-      homeDirectory = "/home/${config.user.username}";
+      username = "${config.homeconfig.user.username}";
+      homeDirectory = "/home/${config.homeconfig.user.username}";
 
       # This value determines the Home Manager release that your configuration is
       # compatible with. This helps avoid breakage when a new Home Manager release

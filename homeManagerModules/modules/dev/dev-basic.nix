@@ -1,5 +1,5 @@
 { pkgs, lib, config, ...}: {
-  options.devBasic = {
+  options.homeconfig.devBasic = {
     enable = lib.mkEnableOption "devBasic";
     gitUserName = lib.mkOption {
       description = "git username";
@@ -15,7 +15,7 @@
   };
 
 
-  config = lib.mkIf config.devBasic.enable {
+  config = lib.mkIf config.homeconfig.devBasic.enable {
     home.packages = with pkgs; [
       # Language server
       nil # nix language server
@@ -35,8 +35,8 @@
       git = {
         enable = true;
         lfs.enable = true;
-        userName = "${config.devBasic.gitUserName}";
-        userEmail = "${config.devBasic.gitUserEmail}";
+        userName = "${config.homeconfig.devBasic.gitUserName}";
+        userEmail = "${config.homeconfig.devBasic.gitUserEmail}";
         extraConfig = {
           init.defaultbranch = "main";
           push.autosetupremote = true;

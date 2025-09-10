@@ -16,9 +16,22 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      ##
+      #######################
+      # Systemconfiguration
+      #######################
+      nixosConfigurations = {
+        develop = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configurations/hosts/develop
+            ./nixosSystemModules
+          ];
+        };
+      };
+      #######################
       # Homemanagerconfig
-      ##
+      #######################
       homeConfigurations = {
         michaelDesktop = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;

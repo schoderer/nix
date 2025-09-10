@@ -1,6 +1,8 @@
 { pkgs, lib, config, ...}: {
-  options.devKubernetes = {
+  options.homeconfig.devKubernetes = {
+    
     enable = lib.mkEnableOption "devKubernetes";
+
     defaultEditor = lib.mkOption {
       type = lib.types.str;
       default = "hx";
@@ -10,7 +12,7 @@
   };
 
 
-  config = lib.mkIf config.devKubernetes.enable {
+  config = lib.mkIf config.homeconfig.devKubernetes.enable {
     home = {
       packages = with pkgs; [
         # Kubernetes
@@ -30,7 +32,7 @@
         ".config/containers/policy.json".source = ./dotfiles/containers_policy.json;
       };
       sessionVariables = {
-        KUBE_EDITOR = "${config.devKubernetes.defaultEditor}";
+        KUBE_EDITOR = "${config.homeconfig.devKubernetes.defaultEditor}";
       };
     };
   };
