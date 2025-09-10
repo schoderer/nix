@@ -9,6 +9,9 @@
       helix
       just
     ];
+    fonts.packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+    ];
     programs = {
       fish.enable = true;
       ssh.startAgent = true;

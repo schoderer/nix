@@ -2,8 +2,9 @@
   # Custom Programs
   # services.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  
-
+  # Deactivates networkmanager, which makes the boot time longer
+  systemd.services.NetworkManager-wait-online.enable = false;  
+#  systemd.services.accounts-daemon.enable = false;
   services.flatpak.enable = true; # Enable Flatpaks
   services.fwupd.enable = true; # Firmware verwaltung und upgrades
    # Enable sound with pipewire.

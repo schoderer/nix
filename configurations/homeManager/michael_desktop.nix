@@ -2,11 +2,14 @@
   homeconfig = {
     user.username = "michael";
     fishShell.enable  = true;
-    devBasic = {
-      enable = true;
-      gitUserName = "Michael Schoderer";
-      gitUserEmail = "github.anemic814@passmail.net";
+    dev = {
+      basic = {
+        enable = true;
+        gitUserName = "Michael Schoderer";
+        gitUserEmail = "github.anemic814@passmail.net";
+      };
+      kubernetes.enable = true;
+      gui.enable = true;
     };
-    devKubernetes.enable = true;
   };
 }

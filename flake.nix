@@ -14,6 +14,10 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      unstable-pkgs = import unstable {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in
     {
       #######################
@@ -35,10 +39,10 @@
       homeConfigurations = {
         michaelDesktop = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          extraSpecialArgs = { inherit inputs; };
+          extraSpecialArgs = { inherit inputs unstable-pkgs; };
           modules = [
             ./configurations/homeManager/michael_desktop.nix
-            ./homeManagerModules            
+            ./homeManagerModules
           ];
         };
       };
