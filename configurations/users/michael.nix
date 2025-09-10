@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   users.users.michael = {
     isNormalUser = true;
     description = "Michael";
