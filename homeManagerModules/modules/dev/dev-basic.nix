@@ -30,6 +30,7 @@ in {
       tokei
       jq # json query
       rclone
+      distrobox
     ];
 
     programs = {
