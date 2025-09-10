@@ -31,9 +31,6 @@ flatpak-install:
     flatpak install --user -y flathub org.freecadweb.FreeCAD
     flatpak install --user -y flathub com.prusa3d.PrusaSlicer
     flatpak install --user -y flathub md.obsidian.Obsidian
-    flatpak install --user -y flathub com.valvesoftware.Steam
-    flatpak override --user --filesystem=/games com.valvesoftware.Steam
-    flatpak override --user --filesystem=/home/michael/dev com.valvesoftware.Steam
     flatpak install --user -y flathub           com.heroicgameslauncher.hgl
     flatpak override --user --filesystem=/games com.heroicgameslauncher.hgl
     flatpak install --user -y flathub com.discordapp.Discord

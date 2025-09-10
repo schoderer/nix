@@ -18,20 +18,17 @@
 
   config = lib.mkIf config.systemconfig.base.enable {
     # Bootloaderconfig
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
 
     boot = {
       initrd.systemd.enable = true;
       plymouth.enable = true; # Enable Plymouth, for encrypted boot
       loader = {
         timeout = 1;
- #       efi.canTouchEfiVariables = true;
- #       systemd-boot = {
- #         enable = true;
- #         configurationLimit = 5;
-  #      };
+        efi.canTouchEfiVariables = true;
+        systemd-boot = {
+          enable = true;
+          configurationLimit = 5;
+       };
       };
     };
     # Kernel

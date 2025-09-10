@@ -13,7 +13,7 @@
       description = "Default terminal editor to use";
     };
   };
-    config = lib.mkIf config.homeconfig.base.enable {
+  config = lib.mkIf config.homeconfig.base.enable {
       home.packages = with pkgs; [
         helix
         ripgrep
@@ -21,7 +21,6 @@
         bat # cat alternative
         eza # ls alternative
     ];
-
     home.shellAliases = {
       ls = "eza --color=always --group-directories-first --icons";
       ll = "eza -la --icons --octal-permissions --group-directories-first";
