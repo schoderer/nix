@@ -12,6 +12,12 @@
       example = "hostname";
       description = "Hostname of the system";
     };
+    kernelPackage = lib.mkOption {
+      type = lib.types.str;
+      example = "linuxPackages_latest";
+      default = "linuxPackages_latest";
+      description = "Linux kernel which should be used";
+    };
     enableBluetooth = lib.mkEnableOption "bluetooth";
     enableWifi = lib.mkEnableOption "wifi";
   };
@@ -20,6 +26,7 @@
     # Bootloaderconfig
 
     boot = {
+      kernelPackages = pkgs."${config.systemconfig.base.kernelPackage}";
       initrd.systemd.enable = true;
       plymouth.enable = true; # Enable Plymouth, for encrypted boot
       loader = {

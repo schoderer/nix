@@ -35,6 +35,9 @@ in {
             private_browsing = true;
           };
         };
+        Homepage = {
+          StartPage = "none";
+        };
       };
     };
   };
