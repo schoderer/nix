@@ -1,9 +1,11 @@
-{ pkgs, lib, config, ... }: {
+{ pkgs, lib, config, ... }: let 
+  cfg = config.systemconfig.programs.base;
+in {
   options.systemconfig.programs.base = {
     enable = lib.mkEnableOption "base programs";
   };
 
-  config = lib.mkIf config.systemconfig.programs.base.enable {
+  config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       git
       helix

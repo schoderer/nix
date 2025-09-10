@@ -1,9 +1,11 @@
-{ pkgs, lib, config, ... }: {
+{ pkgs, lib, config, ... }: let
+  cfg = config.systemconfig.desktop.kde;
+in {
   options.systemconfig.desktop.kde = {
     enable = lib.mkEnableOption "kde desktop";
   };
 
-  config = lib.mkIf config.systemconfig.desktop.kde.enable {
+  config = lib.mkIf cfg.enable {
     # Enable the KDE Desktop Environment.
     services.desktopManager.plasma6.enable = true;
     services.displayManager.defaultSession = "plasma";

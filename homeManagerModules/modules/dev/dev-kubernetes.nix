@@ -1,6 +1,6 @@
 { pkgs, lib, config, ...}: let
     cfg = config.homeconfig.dev.kubernetes;
-  in {
+in {
   options.homeconfig.dev.kubernetes = {
     
     enable = lib.mkEnableOption "devKubernetes";

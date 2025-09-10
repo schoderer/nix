@@ -1,10 +1,13 @@
-{ pkgs, lib, config, ... }: {
+{ pkgs, lib, config, ... }: let
+  cfg = config.systemconfig.programs.gaming.steam;
+
+in {
   options.systemconfig.programs.gaming.steam = {
     enable = lib.mkEnableOption "steam";
   };
 
 
-  config = lib.mkIf config.systemconfig.programs.gaming.steam.enable {
+  config = lib.mkIf cfg.enable {
     nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
       "steam"
       "steam-original"

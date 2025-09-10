@@ -1,8 +1,10 @@
-{ pkgs, lib, config, ...}: {
+{ pkgs, lib, config, ...}: let
+    cfg = config.homeconfig.fishShell;
+in {
   options.homeconfig.fishShell = {
     enable = lib.mkEnableOption "fishShell";
   };
-  config = lib.mkIf config.homeconfig.fishShell.enable {
+  config = lib.mkIf cfg.enable {
     programs.fish = {
       enable = true;
       shellAbbrs = {

@@ -1,5 +1,6 @@
-{ pkgs, lib, config, ... }:
-{
+{ pkgs, lib, config, ... }: let
+  cfg = config.systemconfig.base;
+in {
   options.systemconfig.base = {
     enable = lib.mkOption {
       type = lib.types.bool;
@@ -22,11 +23,11 @@
     enableWifi = lib.mkEnableOption "wifi";
   };
 
-  config = lib.mkIf config.systemconfig.base.enable {
+  config = lib.mkIf cfg.enable {
     # Bootloaderconfig
 
     boot = {
-      kernelPackages = pkgs."${config.systemconfig.base.kernelPackage}";
+      kernelPackages = pkgs."${cfg.kernelPackage}";
       initrd.systemd.enable = true;
       plymouth.enable = true; # Enable Plymouth, for encrypted boot
       loader = {
@@ -43,7 +44,7 @@
 
     networking = {
       networkmanager.enable = true;
-      hostName = config.systemconfig.base.hostName;
+      hostName = cfg.hostName;
     };
 
     # Set your time zone.
@@ -86,8 +87,8 @@
     };
 
 
-    hardware.bluetooth.enable = config.systemconfig.base.enableBluetooth;
-    hardware.bluetooth.powerOnBoot = config.systemconfig.base.enableBluetooth;
-    networking.wireless.enable = config.systemconfig.base.enableWifi;
+    hardware.bluetooth.enable = cfg.enableBluetooth;
+    hardware.bluetooth.powerOnBoot = cfg.enableBluetooth;
+    networking.wireless.enable = cfg.enableWifi;
   };
 }
