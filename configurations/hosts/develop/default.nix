@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./hardware-configuration-2.nix
+    ./hardware-configuration.nix
     ../../users/michael.nix
   ];
   systemconfig = {

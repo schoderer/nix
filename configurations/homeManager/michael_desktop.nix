@@ -11,5 +11,9 @@
       kubernetes.enable = true;
       gui.enable = true;
     };
+    gui = {
+        firefox.enable = true;
+        gnomeSettings.enable = true;
+    };
   };
 }
