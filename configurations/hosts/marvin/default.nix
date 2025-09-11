@@ -10,6 +10,7 @@
     };
     systemconfig.services = {
       base = {
+        enable = true;
         openssh.enable = true;
       };
     };

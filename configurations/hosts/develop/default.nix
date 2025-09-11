@@ -20,6 +20,7 @@
     };
     services = {
       base = {
+        enable = true;
         audio.enable = true;
         flatpak.enable = true;
       };
