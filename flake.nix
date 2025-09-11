@@ -43,6 +43,14 @@
             ./nixosSystemModules
           ];
         };
+        marvin = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configurations/hosts/marvin
+            ./nixosSystemModules
+          ];
+        };
       };
       #######################
       # Homemanagerconfig
