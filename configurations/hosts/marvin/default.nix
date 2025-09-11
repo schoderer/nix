@@ -8,5 +8,10 @@
       enable = true;
       hostName = "marvin";
     };
+    systemconfig.services = {
+      base = {
+        openssh.enable = true;
+      };
+    };
   };
 }

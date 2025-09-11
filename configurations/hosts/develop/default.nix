@@ -18,5 +18,11 @@
       };
       virtualization.enable = true;
     };
+    services = {
+      base = {
+        audio.enable = true;
+        flatpak.enable = true;
+      };
+    };
   };
 }
