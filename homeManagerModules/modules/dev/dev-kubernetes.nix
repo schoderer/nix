@@ -24,6 +24,8 @@ in {
         kubernetes-helmPlugins.helm-diff
         k9s
         kubie
+
+        istioctl
       ];
       shellAliases = {
         k = "kubectl";
