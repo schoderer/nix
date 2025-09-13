@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
-    ./base.nix
+    ./openssh.nix
+    ./desktop.nix
   ];
   # Deactivates networkmanager, which makes the boot time longer
   systemd.services.NetworkManager-wait-online.enable = false;  

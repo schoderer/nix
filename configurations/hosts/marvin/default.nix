@@ -8,11 +8,6 @@
       enable = true;
       hostName = "marvin";
     };
-    services = {
-      base = {
-        enable = true;
-        openssh.enable = true;
-      };
-    };
+    services.openssh.enable = true;
   };
 }

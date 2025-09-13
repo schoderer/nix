@@ -31,7 +31,9 @@ in {
         cursor-theme="Adwaita";
         icon-theme="Adwaita";
       };
-
+      "org/gnome/desktop/wm/preferences" = {
+        button-layout=":minimize,maximize,close";
+      };
 
       "org/gnome/shell/extensions/dash-to-dock" = {
         background-opacity=0.8;

@@ -2,6 +2,11 @@ default:
     just --list
 update:
     nix flake update
+upgrade:
+    nix flake update
+    sudo nixos-rebuild switch --flake .#develop
+    home-manager switch -b backup --flake .#michaelDesktop
+    
 clean:
     sudo nix-collect-garbage -d
     nix-collect-garbage -d
@@ -18,11 +23,6 @@ home-manager:
     home-manager switch -b backup --flake .#michaelDesktop
 home-manager-install CHANNEL:
     nix run home-manager/{{ CHANNEL }} -- init --switch
-# Gnome
-setup-gnome:
-    gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
-
-
 
 # Flatpak
 flatpak-install:

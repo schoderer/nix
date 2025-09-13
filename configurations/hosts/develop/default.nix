@@ -19,11 +19,7 @@
       virtualization.enable = true;
     };
     services = {
-      base = {
-        enable = true;
-        audio.enable = true;
-        flatpak.enable = true;
-      };
+      desktop.enable = true;
     };
   };
 }
