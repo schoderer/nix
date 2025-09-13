@@ -19,6 +19,8 @@ in {
       packages = with pkgs; [
         # Kubernetes
         minikube
+        docker-machine-kvm2 #Needed for minikube podman
+        
         kubectl
         kubernetes-helm
         kubernetes-helmPlugins.helm-diff
