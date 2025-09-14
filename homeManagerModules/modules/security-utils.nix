@@ -2,7 +2,7 @@
     cfg = config.homeconfig.security-utils;
 in {
   options.homeconfig.security-utils = {
-    enable = lib.mkEnableOption "devGui";
+    enable = lib.mkEnableOption "security utils like sops and age";
   };
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
