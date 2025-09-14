@@ -6,5 +6,6 @@
     ./modules/base
     ./modules/dev
     ./modules/gui
+    ./modules/security-utils.nix
   ];
 }

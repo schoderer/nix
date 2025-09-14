@@ -15,5 +15,6 @@
         firefox.enable = true;
         gnomeSettings.enable = true;
     };
+    security-utils.enable = true;
   };
 }
