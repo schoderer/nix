@@ -6,6 +6,7 @@ in {
   };
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
+        gnupg
         sops # https://github.com/getsops/sops
         age # https://github.com/FiloSottile/age
     ];

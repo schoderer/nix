@@ -20,7 +20,6 @@ in {
       description = "Linux kernel which should be used";
     };
     enableBluetooth = lib.mkEnableOption "bluetooth";
-    enableWifi = lib.mkEnableOption "wifi";
   };
 
   config = lib.mkIf cfg.enable {
@@ -89,6 +88,5 @@ in {
 
     hardware.bluetooth.enable = cfg.enableBluetooth;
     hardware.bluetooth.powerOnBoot = cfg.enableBluetooth;
-    networking.wireless.enable = cfg.enableWifi;
   };
 }

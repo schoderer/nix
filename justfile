@@ -19,10 +19,11 @@ clean:
 rebuild-develop:
     sudo nixos-rebuild switch --flake .#develop
 
+rebuild-framework:
+    sudo nixos-rebuild switch --flake .#framework
+    
 home-manager:
     home-manager switch -b backup --flake .#michaelDesktop
-home-manager-install CHANNEL:
-    nix run home-manager/{{ CHANNEL }} -- init --switch
 
 # Flatpak
 flatpak-install:

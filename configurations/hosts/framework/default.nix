@@ -6,9 +6,8 @@
   systemconfig = {
     base = {
       enable = true;
-      hostName = "develop";
+      hostName = "framework";
       enableBluetooth = true;
-      enableWifi = false;
     };
     desktop.gnome.enable = true;
     programs = {
@@ -18,5 +17,6 @@
       };
       virtualization.enable = true;
     };
+    services.desktop.enable = true;
   };
 }
