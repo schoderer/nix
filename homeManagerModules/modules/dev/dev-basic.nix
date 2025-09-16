@@ -28,11 +28,15 @@ in {
       gh
       cookiecutter
       tokei
+      zellij
       jq # json query
       rclone
       distrobox
     ];
-
+    home.file = {
+      ".config/zellij/config.kdl".source = ./dotfiles/zellij/zellij.kdl;
+      ".config/zellij/layouts/rust.kdl".source = ./dotfiles/zellij/rust.kdl;
+    };
     programs = {
       ## Git
       git = {
