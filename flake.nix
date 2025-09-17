@@ -51,7 +51,22 @@
             ./nixosSystemModules
           ];
         };
+        #######################
+        # Cluster
+        #######################
+        h3k1 = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configurations/hosts/cluster/h3k1
+            ./nixosSystemModules
+          ];
+        };
       };
+  
+
+
+
       #######################
       # Homemanagerconfig
       #######################

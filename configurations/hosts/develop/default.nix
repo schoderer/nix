@@ -8,7 +8,6 @@
       enable = true;
       hostName = "develop";
       enableBluetooth = true;
-      enableWifi = false;
     };
     desktop.gnome.enable = true;
     programs = {
