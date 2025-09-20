@@ -1,12 +1,8 @@
 default:
     just --list
+
 update:
-    nix flake update
-upgrade:
-    nix flake update
-    sudo nixos-rebuild switch --flake .#develop
-    home-manager switch -b backup --flake .#michaelDesktop
-    
+    nix flake update    
 clean:
     sudo nix-collect-garbage -d
     nix-collect-garbage -d
@@ -15,13 +11,20 @@ clean:
     nix store optimise
     home-manager remove-generations old
 
-
+#### OS Configurations
 rebuild-develop:
     sudo nixos-rebuild switch --flake .#develop
 
 rebuild-framework:
     sudo nixos-rebuild switch --flake .#framework
-    
+
+rebuild-marvin:
+    sudo nixos-rebuild switch --flake .#marvin
+
+rebuild-sob:
+    sudo nixos-rebuild switch --flake .#sob
+
+#### Home-Manager
 home-manager:
     home-manager switch -b backup --flake .#michaelDesktop
 
