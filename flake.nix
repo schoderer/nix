@@ -51,6 +51,14 @@
             ./nixosSystemModules
           ];
         };
+        sob = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configurations/hosts/sob
+            ./nixosSystemModules
+          ];
+        };
         #######################
         # Cluster
         #######################
