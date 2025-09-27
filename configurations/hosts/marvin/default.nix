@@ -4,6 +4,7 @@
     ../../users/michael.nix
   ];
   systemconfig = {
+    programs.base.enable = true;
     base = {
       enable = true;
       hostName = "marvin";
