@@ -5,6 +5,9 @@
     description = "Michael";
     shell = pkgs.fish;
     extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" ];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO10xSRLGOMQgKTMlbIy0GHEBQ1u7Lio/FR5iLaGSxmC michael"
+    ];
   };
 
 }
