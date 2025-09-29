@@ -62,11 +62,11 @@
         #######################
         # Cluster
         #######################
-        h3k1 = nixpkgs.lib.nixosSystem {
+        h3k3 = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = { inherit inputs; };
           modules = [
-            ./configurations/hosts/cluster/h3k1
+            ./configurations/hosts/cluster/h3k3
             ./nixosSystemModules
           ];
         };

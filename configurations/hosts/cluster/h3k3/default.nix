@@ -6,7 +6,7 @@
   systemconfig = {
     base = {
       enable = true;
-      hostName = "h3k1";
+      hostName = "h3k3";
     };
     services.openssh.enable = true;
   };
