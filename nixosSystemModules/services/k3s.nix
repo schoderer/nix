@@ -27,7 +27,7 @@ in {
       token = cfg.token; ## todo how to set this securly?
       clusterInit = true;
       extraFlags = toString [
-        "--no-deploy traefik"
+        "--disable=traefik"
       ];
     };
   };
