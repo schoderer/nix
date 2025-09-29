@@ -4,12 +4,13 @@ default:
 update:
     nix flake update    
 clean:
+    home-manager expire-generations -d
+    home-manager remove-generations old
     sudo nix-collect-garbage -d
     nix-collect-garbage -d
-    home-manager expire-generations -d
     nix store gc
     nix store optimise
-    home-manager remove-generations old
+
 
 #### OS Configurations
 rebuild-develop:
@@ -23,6 +24,10 @@ rebuild-marvin:
 
 rebuild-sob:
     sudo nixos-rebuild switch --flake .#sob
+
+### Cluster
+rebuild-h3k3:
+    sudo nixos-rebuild switch --flake .#h3k3
 
 #### Home-Manager
 home-manager:
