@@ -4,8 +4,8 @@ default:
 update:
     nix flake update    
 clean:
-    home-manager expire-generations -d
-    home-manager remove-generations old
+    home-manager expire-generations -d || true
+    home-manager remove-generations old || true
     sudo nix-collect-garbage -d
     nix-collect-garbage -d
     nix store gc
