@@ -10,6 +10,7 @@ in {
     
     home.file = {
       ".config/niri/config.kdl".source = ./dotfiles/niri.kdl;
+      ".config/niri/wallpaper.jpg".source = ./dotfiles/wallpapers/green-unsplash.jpg;
       ".config/alacritty/alacritty.toml".source = ./dotfiles/alacritty.toml;
       ".config/waybar" = {
         source = ./dotfiles/waybar;

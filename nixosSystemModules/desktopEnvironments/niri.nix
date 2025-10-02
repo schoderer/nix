@@ -14,7 +14,7 @@ in {
       alacritty # Terminal
       fuzzel # Application Menu
       mako # Notificationdaemon
-
+      swww # Background manager
       # Waybar
       waybar # Applicationbar
       pavucontrol # Volumecontrol
