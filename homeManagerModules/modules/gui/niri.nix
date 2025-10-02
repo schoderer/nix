@@ -9,8 +9,12 @@ in {
   config = lib.mkIf cfg.enable {
     
     home.file = {
-      ".config/alacritty/alacritty.toml".source = ./dotfiles/alacritty.toml;
       ".config/niri/config.kdl".source = ./dotfiles/niri.kdl;
+      ".config/alacritty/alacritty.toml".source = ./dotfiles/alacritty.toml;
+      ".config/waybar" = {
+        source = ./dotfiles/waybar;
+        recursive = true;
+      };
     };
   };
 }
