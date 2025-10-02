@@ -10,6 +10,9 @@ in {
       shellAbbrs = {
         "+" = "nix shell nixpkgs#";
       };
+      shellAliases = {
+        "?" = "nix search nixpkgs ";
+      };
       interactiveShellInit = ''
         set fish_greeting # Disable greeting
       '';
