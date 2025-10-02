@@ -19,6 +19,7 @@ in {
       waybar # Applicationbar
       pavucontrol # Volumecontrol
       wlogout
+      bluetui # bluetooth management
     ];
   };
 }

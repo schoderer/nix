@@ -1,17 +1,39 @@
 {
-    "modules-left": ["niri/workspaces"],
-    "modules-center": ["idle_inhibitor", "clock"],
-    "modules-right": ["tray", "pulseaudio", "custom/power"],
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["niri/workspaces", "power-profiles-daemon", "cpu", "memory" ],
+    "modules-center": ["clock"],
+    "modules-right": ["tray",  "pulseaudio", "idle_inhibitor", "custom/power"],
 
     "niri/workspaces": {
         
+    },
+    "cpu": {
+        "interval": 10,
+        "format": " {usage:>2}%"
+    },
+    "memory": {
+        "interval": 10,
+        "format": "   {percentage:>2}%",
+        "tooltip": true,
+        "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G"
+    },
+    "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+    }
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",
         "format-disconnected": "", 
-        "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+        "max-length": 50
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -26,7 +48,6 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": "{:%Y-%m-%d}"
 		"on-click": "gnome-calendar"
     },
     "pulseaudio": {

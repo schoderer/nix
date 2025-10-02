@@ -145,7 +145,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fd6ffff"
+        active-color "#123b05ff"
 
         // Color of the ring on inactive monitors.
         //
@@ -251,6 +251,16 @@ spawn-at-startup "swww-daemon"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+
+overview {
+    backdrop-color "#02240dcc"
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -592,4 +602,5 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+    Mod+Shift+Q { spawn "wlogout"; }
 }

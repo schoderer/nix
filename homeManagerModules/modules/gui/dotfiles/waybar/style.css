@@ -14,16 +14,16 @@ window#waybar {
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0,43,51,0.85);
-    margin: 2px 10px 0 0;
+	background-color: rgba(5, 94, 34, 0.8);
+    margin: 2px 3px 0 0;
 }
 .modules-center {
-	background-color: rgba(0,43,51,0.85);
+	background-color: rgba(5, 94, 34, 0.8);
     margin: 2px 0 0 0;
 }
 .modules-left {
     margin: 2px 0 0 5px;
-	background-color: rgba(0,119,179,0.6);
+	background-color: rgba(5, 94, 34, 0.8);
 }
 /*-----modules indv----*/
 #workspaces button {
@@ -32,11 +32,11 @@ window#waybar {
 }
 #workspaces button:hover {
     box-shadow: inherit;
-	background-color: rgba(0,153,153,1);
+	background-color: rgb(0, 153, 38);
 }
 
 #workspaces button.focused {
-	background-color: rgba(0,43,51,0.85);
+	background-color: rgba(3, 119, 19, 0.85);
 }
 
 #clock,
@@ -47,6 +47,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-media,
+#power-profiles-daemon,
 #tray,
 #mode,
 #custom-power,
@@ -59,7 +60,7 @@ window#waybar {
     font-weight: bold;
 }
 #custom-power {
-    background-color: rgba(0,119,179,0.6);
+    background-color: rgba(201, 27, 4, 0.8);
     border-radius: 100px;
     margin: 5px 5px;
     padding: 1px 1px 1px 6px;
