@@ -3,7 +3,7 @@
     "position": "top",
     "modules-left": ["niri/workspaces", "power-profiles-daemon", "cpu", "memory" ],
     "modules-center": ["clock"],
-    "modules-right": ["tray",  "pulseaudio", "idle_inhibitor", "custom/power"],
+    "modules-right": ["tray",  "pulseaudio", "battery", "network", "custom/power"],
 
     "niri/workspaces": {
         
@@ -12,6 +12,16 @@
         "interval": 10,
         "format": " {usage:>2}%"
     },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
+    },
     "memory": {
         "interval": 10,
         "format": "   {percentage:>2}%",
@@ -19,7 +29,7 @@
         "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G"
     },
     "power-profiles-daemon": {
-    "format": "{icon}",
+    "format": "{icon}  ",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
@@ -30,8 +40,8 @@
     }
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
+        "format-wifi": "",
+        "format-ethernet": "",
         "format-disconnected": "", 
         "max-length": 50
     },
@@ -51,11 +61,11 @@
 		"on-click": "gnome-calendar"
     },
     "pulseaudio": {
-        "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "0% {icon} ",
-        "format-source": "{volume}% ",
+        "format-muted": "{icon}  0%",
+        "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
