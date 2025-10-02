@@ -1,8 +1,11 @@
 {
-    "modules-left": [],
-    "modules-center": ["clock", "idle_inhibitor"],
-    "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["idle_inhibitor", "clock"],
+    "modules-right": ["tray", "pulseaudio", "custom/power"],
 
+    "niri/workspaces": {
+        
+    },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",
@@ -18,11 +21,11 @@
         }
     },
     "tray": {
-        "icon-size": 15,
+        "icon-size": 16,
         "spacing": 10
     },
     "clock": {
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%d.%m.%Y}</big>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%Y-%m-%d}"
 		"on-click": "gnome-calendar"
     },
@@ -47,14 +50,5 @@
 	"custom/power": {
 		"format": " ",
 		"on-click": "wlogout"
-	},
-    "custom/scratchpad-indicator": {
-        "format-text": "{}hi",
-        "return-type": "json",
-        "interval": 3,
-        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
-        "exec-if": "exit 0",
-        "on-click": "swaymsg 'scratchpad show'",
-        "on-click-right": "swaymsg 'move scratchpad'"
-    }
+	}
 }

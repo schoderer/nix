@@ -13,12 +13,12 @@ in {
       xwayland-satellite # To start x11 Applications like Electron in niri
       alacritty # Terminal
       fuzzel # Application Menu
-      swaylock #Lockscreen
       mako # Notificationdaemon
 
       # Waybar
       waybar # Applicationbar
       pavucontrol # Volumecontrol
+      wlogout
     ];
   };
 }
