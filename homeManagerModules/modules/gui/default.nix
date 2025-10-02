@@ -2,7 +2,7 @@
   imports = [
     ./firefox.nix
     ./gnome-settings.nix
-    
+    ./niri.nix
   ];
 
 }

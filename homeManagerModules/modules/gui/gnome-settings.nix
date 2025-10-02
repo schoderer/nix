@@ -23,11 +23,11 @@ in {
       };
       "org/gnome/shell/extensions/trayIconsReloaded" = {
         icon-padding-horizontal=0;
-        itcon-size=16;
+        icon-size=16;
       };
       "org/gnome/desktop/interface" = {
         color-scheme="prefer-dark";
-        cursor-size=24;
+        cursor-size=16;
         cursor-theme="Adwaita";
         icon-theme="Adwaita";
       };

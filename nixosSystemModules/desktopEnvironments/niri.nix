@@ -10,14 +10,15 @@ in {
 
 
     environment.systemPackages = with pkgs; [
+      xwayland-satellite # To start x11 Applications like Electron in niri
       alacritty # Terminal
       fuzzel # Application Menu
-      waybar # Applicationbar
       swaylock #Lockscreen
       mako # Notificationdaemon
 
-
-      xwayland-satellite
+      # Waybar
+      waybar # Applicationbar
+      pavucontrol # Volumecontrol
     ];
   };
 }
