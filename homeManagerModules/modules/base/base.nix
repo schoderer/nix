@@ -22,6 +22,7 @@ in {
         just
         bat # cat alternative
         eza # ls alternative
+        btop
     ];
     home.shellAliases = {
       ls = "eza --color=always --group-directories-first --icons";

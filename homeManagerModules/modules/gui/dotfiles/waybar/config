@@ -10,7 +10,8 @@
     },
     "cpu": {
         "interval": 10,
-        "format": " {usage:>2}%"
+        "format": " {usage:>2}%",
+        "on-click": "btop"
     },
     "battery": {
         "interval": 60,
@@ -26,7 +27,8 @@
         "interval": 10,
         "format": "   {percentage:>2}%",
         "tooltip": true,
-        "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G"
+        "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G",
+        "on-click": "btop"
     },
     "power-profiles-daemon": {
     "format": "{icon}  ",
