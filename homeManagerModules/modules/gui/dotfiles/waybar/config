@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["niri/workspaces", "power-profiles-daemon", "cpu", "memory" ],
+    "modules-left": ["niri/workspaces", "power-profiles-daemon", "cpu", "memory", "idle_inhibitor" ],
     "modules-center": ["clock"],
     "modules-right": ["tray",  "pulseaudio", "battery", "network", "custom/power"],
 
@@ -42,7 +42,7 @@
     }
     },
     "network": {
-        "format-wifi": " ",
+        "format-wifi": "  ",
         "format-ethernet": "",
         "format-disconnected": "", 
         "max-length": 50
