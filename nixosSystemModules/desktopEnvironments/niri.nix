@@ -8,7 +8,6 @@ in {
   config = lib.mkIf cfg.enable {
     programs.niri.enable = true;
 
-
     environment.systemPackages = with pkgs; [
       xwayland-satellite # To start x11 Applications like Electron in niri
       alacritty # Terminal
@@ -20,6 +19,7 @@ in {
       pavucontrol # Volumecontrol
       wlogout
       bluetui # bluetooth management
+      gnome-keyring
     ];
   };
 }
