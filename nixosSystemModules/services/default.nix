@@ -2,6 +2,7 @@
   imports = [
     ./openssh.nix
     ./desktop.nix
+    ./embedded.nix
     ./k3s.nix
   ];
   # Deactivates networkmanager, which makes the boot time longer

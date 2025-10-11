@@ -20,6 +20,7 @@
     };
     services = {
       desktop.enable = true;
+      embedded.enable = true;
     };
   };
 }
