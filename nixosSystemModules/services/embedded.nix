@@ -8,6 +8,7 @@ in {
     users.groups.plugdev = {};
     environment.systemPackages = with pkgs; [
       cyme
+      picotool
     ];
     services.udev.extraRules = ''
 
