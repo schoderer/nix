@@ -18,6 +18,10 @@ in {
       443
       80
     ];
+    users.groups.k8s = {};
+    environment.systemPackages = with pkgs; [
+      k9s
+    ];
     networking.firewall.allowedUDPPorts = [
       8472 # k3s, flannel: required if using multi-node for inter-node networking
     ];
@@ -28,6 +32,7 @@ in {
       clusterInit = true;
       extraFlags = toString [
         "--disable=traefik"
+        "--write-kubeconfig-group k8s"
       ];
     };
   };
