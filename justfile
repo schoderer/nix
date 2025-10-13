@@ -27,7 +27,7 @@ rebuild-sob:
 
 ### Cluster
 rebuild-h3k3:
-    sudo nixos-rebuild switch --flake .#h3k3
+    sudo nixos-rebuild boot --flake .#h3k3
 
 #### Home-Manager
 home-manager:
