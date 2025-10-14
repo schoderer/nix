@@ -21,6 +21,7 @@
     services = {
       desktop.enable = true;
       embedded.enable = true;
+      opentabletdriver.enable = true;
     };
   };
 }
