@@ -15,6 +15,7 @@
         niri.enable = true;
         firefox.enable = true;
         gnomeSettings.enable = true;
+        additional.enable = true;
     };
     security-utils.enable = true;
   };

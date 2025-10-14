@@ -6,6 +6,9 @@ in {
   # services.xserver.libinput.enable = true;
 
   config = lib.mkIf cfg.enable {
+      environment.systemPackages = with pkgs; [
+        appimage-run
+      ];
       # Custom Programs
       # Enable flatpak for easy installation of desktop applications.
       services.flatpak.enable = true;
