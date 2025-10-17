@@ -1,12 +1,17 @@
 { pkgs, config, lib, ...}:
 let
     cfg = config.homeconfig.gui.gnomeSettings;
+    user = config.homeconfig.user.username;
+    user-homedir = config.home.homeDirectory;
 in {
   options.homeconfig.gui.gnomeSettings = {
     enable = lib.mkEnableOption "gnomeSettings";
   };
 
   config = lib.mkIf cfg.enable {
+    home.file = {
+      ".config/wallpaper.jpg".source = ./dotfiles/wallpapers/green-unsplash.jpg;
+    };
     home.packages = with pkgs; [
       gnomeExtensions.dash-to-dock
       gnomeExtensions.tray-icons-reloaded
@@ -30,6 +35,10 @@ in {
         cursor-size=16;
         cursor-theme="Adwaita";
         icon-theme="Adwaita";
+      };
+      "org/gnome/desktop/background" = {
+        picture-uri="file:///${user-homedir}/.config/wallpaper.jpg";
+        picture-uri-dark="file:///${user-homedir}/.config/wallpaper.jpg";
       };
       "org/gnome/desktop/wm/preferences" = {
         button-layout=":minimize,maximize,close";

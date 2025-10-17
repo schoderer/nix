@@ -10,7 +10,7 @@
       enableBluetooth = true;
     };
     desktop.gnome.enable = true;
-    desktop.niri.enable = true;
+    # desktop.niri.enable = true;
     programs = {
       base.enable = true;
       gaming = {

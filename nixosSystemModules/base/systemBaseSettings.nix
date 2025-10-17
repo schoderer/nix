@@ -26,6 +26,7 @@ in {
     # Bootloaderconfig
 
     boot = {
+      # Select kernel
       kernelPackages = pkgs."${cfg.kernelPackage}";
       initrd.systemd.enable = true;
       plymouth.enable = true; # Enable Plymouth, for encrypted boot
@@ -38,8 +39,6 @@ in {
        };
       };
     };
-    # Kernel
-    # boot.kernelPackages = pkgs.linuxPackages_latest;
 
     networking = {
       networkmanager.enable = true;
