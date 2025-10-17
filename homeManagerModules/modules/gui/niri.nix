@@ -9,10 +9,10 @@ in {
   config = lib.mkIf cfg.enable {
     home.file = {
       ".config/niri/config.kdl".source = ./dotfiles/niri.kdl;
-      ".config/alacritty/alacritty.toml".source = ./dotfiles/alacritty.toml;
+      ".config/alacritty/alacritty.toml".source = ./dotfiles/themes/greenLeaf/alacritty.toml;
       ".config/fuzzel/fuzzel.ini".source = ./dotfiles/fuzzel.ini;
       ".config/waybar" = {
-        source = ./dotfiles/waybar;
+        source = ./dotfiles/themes/greenLeaf/waybar;
         recursive = true;
       };
     };

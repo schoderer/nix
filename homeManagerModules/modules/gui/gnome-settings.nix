@@ -10,7 +10,7 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.file = {
-      ".config/wallpaper.jpg".source = ./dotfiles/wallpapers/green-unsplash.jpg;
+      ".config/wallpaper.jpg".source = ./dotfiles/themes/greenLeaf/green-unsplash.jpg;
     };
     home.packages = with pkgs; [
       gnomeExtensions.dash-to-dock
