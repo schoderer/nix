@@ -17,6 +17,7 @@
         steam.enable = true;
       };
       virtualization.enable = true;
+      blender.enable = true;
     };
     services = {
       desktop.enable = true;
