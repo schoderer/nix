@@ -78,6 +78,3 @@ text = "#1E1E2E"
 decorations =  "None"
 opacity = 0.85
 
-[window.padding]
-x = 20
-y = 20

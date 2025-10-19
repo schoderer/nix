@@ -105,7 +105,7 @@
 		"on-click": "gnome-calendar"
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{icon}  {volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "{icon}  0%",
