@@ -1,5 +1,5 @@
-theme = "jetbrains_dark"
-# theme = "nord-night"
+# theme = "jetbrains_dark"
+theme = "nord-night"
 
 [editor]
 line-number = "relative"
