@@ -27,7 +27,14 @@
     "cpu": {
         "interval": 10,
         "format": " {usage:>2}%",
-        "on-click": "btop"
+        "on-click": "alacritty -e btop"
+    },
+    "memory": {
+        "interval": 10,
+        "format": " {percentage:>2}%",
+        "tooltip": true,
+        "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G",
+        "on-click": "alacritty -e btop"
     },
     "battery": {
         "interval": 20,
@@ -64,13 +71,6 @@
         },
         "max-length": 25,
         "tooltip": false
-    },
-    "memory": {
-        "interval": 10,
-        "format": "   {percentage:>2}%",
-        "tooltip": true,
-        "tooltip-format": "RAM: {used:0.2f}G/{total:0.2f}G",
-        "on-click": "btop"
     },
     "power-profiles-daemon": {
     "format": "{icon} ",

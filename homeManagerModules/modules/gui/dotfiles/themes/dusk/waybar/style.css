@@ -56,7 +56,7 @@ window#waybar.hidden {
 #backlight,
 #cpu,
 #power-profiles-daemon,
-#wireplumber,
+#pulseaudio,
 #network,
 #clock,
 #tray {
@@ -112,8 +112,8 @@ window#waybar.hidden {
   background-color: #fab387;
 }
 
-#wireplumber {
-  background-color: #f9e2af;
+#pulseaudio {
+  background-color: #90e4f3;
 }
 
 #network {
