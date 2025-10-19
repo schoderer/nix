@@ -18,6 +18,7 @@ in {
       waybar # Applicationbar
       pavucontrol # Volumecontrol
       wlogout
+      swaylock
       bluetui # bluetooth management
       gnome-keyring
     ];
