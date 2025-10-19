@@ -22,7 +22,6 @@ in {
       # Language server
       nixd # nix language server
       bash-language-server
-      marksman # markdown language server
 
       # Tools
       gh

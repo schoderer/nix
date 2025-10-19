@@ -22,13 +22,14 @@ in {
         docker-machine-kvm2 #Needed for minikube podman
         
         kubectl
+        kubie
+        k9s
+        # Helm
         kubernetes-helm
         kubernetes-helmPlugins.helm-diff
-        k9s
-        kubie
-        dive
 
-        istioctl
+        # Dockertools
+        dive
       ];
       shellAliases = {
         k = "kubectl";
