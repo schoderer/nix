@@ -84,9 +84,10 @@
     }
     },
     "network": {
-        "format-wifi": "  ",
+        "format-wifi": " ",
         "format-ethernet": "",
         "format-disconnected": "", 
+        "tooltip-format": "{signalStrength} - {essid}",
         "max-length": 50
     },
     "idle_inhibitor": {

@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ...}:
+{ pkgs, unstable-pkgs, config, lib, ...}:
 let
     cfg = config.homeconfig.gui.additional;
 in {
@@ -7,8 +7,10 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs;[
-      pureref # Reference Image Viewer
+    home.packages = [
+      pkgs.pureref # Reference Image Viewer
+      unstable-pkgs.proton-pass
+      
     ];
   };
 }

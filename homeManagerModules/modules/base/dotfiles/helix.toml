@@ -10,6 +10,8 @@ text-width = 120
 
 [keys.normal]
 
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints" # Typehints
 [keys.insert]
 "A-q" = "normal_mode"
 
