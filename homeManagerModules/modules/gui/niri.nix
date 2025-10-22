@@ -9,9 +9,14 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
+      gnome-calendar
+      btop
+      
       # Swaylock
       swaylock-effects
     ];
+    
+
     home.file = {
       ".config/niri/config.kdl".source = ./dotfiles/niri.kdl;
       ".config/alacritty/alacritty.toml".source = ./dotfiles/alacritty.toml;
