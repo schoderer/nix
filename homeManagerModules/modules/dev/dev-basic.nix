@@ -24,6 +24,7 @@ in {
       bash-language-server
 
       # Tools
+      jujutsu
       gh
       cookiecutter
       tokei
@@ -35,6 +36,7 @@ in {
     home.file = {
       ".config/zellij/config.kdl".source = ./dotfiles/zellij/zellij.kdl;
       ".config/zellij/layouts/rust.kdl".source = ./dotfiles/zellij/rust.kdl;
+      ".config/jj/config.toml".source = ./dotfiles/jj_config.toml;
     };
     programs = {
       ## Git

@@ -1,6 +1,5 @@
 default:
-	echo "Global Justifle"
-	just --list
+	just -g  --list
 
 create-project TYPE:
     cookiecutter git@github.com:schoderer/project_templates.git --directory="{{ TYPE }}"

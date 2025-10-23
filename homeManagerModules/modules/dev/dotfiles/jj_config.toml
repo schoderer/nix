@@ -1,0 +1,15 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+name = "Michael Schoderer"
+email = "github.anemic814@passmail.net"
+
+[ui]
+default-command = "status"
+paginate = "never"
+diff-editor = ":builtin"
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "~/.ssh/id_ed25519.pub"
