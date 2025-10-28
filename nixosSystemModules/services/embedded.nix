@@ -16,7 +16,7 @@ in {
       # Allow Access to all RPi Devices
       SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", TAG+="uaccess", MODE="666", GROUP="plugdev"
       # SeenGreat logic analyzer
-      SUBSYSTEM=="usb", ATTRS{idVendor}=="15e3", TAG+="uaccess", MODE="666", GROUP="plugdev"
+      SUBSYSTEM=="usb", ATTRS{idVendor}=="1d50",ATTRS{idProduct}=="608c", TAG+="uaccess", MODE="666", GROUP="plugdev"
     '';
   };
 }
