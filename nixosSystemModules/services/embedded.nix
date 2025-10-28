@@ -8,11 +8,15 @@ in {
     users.groups.plugdev = {};
     environment.systemPackages = with pkgs; [
       cyme
+      usbutils
+      pulseview
       picotool
     ];
     services.udev.extraRules = ''
       # Allow Access to all RPi Devices
       SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", TAG+="uaccess", MODE="666", GROUP="plugdev"
+      # SeenGreat logic analyzer
+      SUBSYSTEM=="usb", ATTRS{idVendor}=="15e3", TAG+="uaccess", MODE="666", GROUP="plugdev"
     '';
   };
 }
