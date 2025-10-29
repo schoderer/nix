@@ -17,6 +17,8 @@ in {
       SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", TAG+="uaccess", MODE="666", GROUP="plugdev"
       # SeenGreat logic analyzer
       SUBSYSTEM=="usb", ATTRS{idVendor}=="1d50",ATTRS{idProduct}=="608c", TAG+="uaccess", MODE="666", GROUP="plugdev"
+      # AZ-Delivery-LogicAnalyzer
+      SUBSYSTEM=="usb", ATTRS{idVendor}=="0925",ATTRS{idProduct}=="3881", TAG+="uaccess", MODE="666", GROUP="plugdev"
     '';
   };
 }
