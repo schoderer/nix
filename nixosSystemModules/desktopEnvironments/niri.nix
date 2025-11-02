@@ -22,6 +22,8 @@ in {
       gnome-keyring
       nautilus # filemanager
       loupe # image viewer
+
+      brightnessctl
       
     ];
     programs = {
