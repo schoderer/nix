@@ -4,6 +4,7 @@
     ./gnome-settings.nix
     ./niri.nix
     ./additional_programs.nix
+    #./zed.nix
   ];
 
 }

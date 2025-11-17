@@ -1,5 +1,6 @@
 # theme = "jetbrains_dark"
-theme = "nord-night"
+# theme = "nord-night"
+theme = "monokai_pro_spectrum"
 
 [editor]
 line-number = "relative"
