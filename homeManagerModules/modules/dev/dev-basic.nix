@@ -32,6 +32,8 @@ in {
       jq # json query
       rclone
       distrobox
+
+      presenterm # Presentations in the terminal
     ];
     home.file = {
       ".config/zellij/config.kdl".source = ./dotfiles/zellij/zellij.kdl;
