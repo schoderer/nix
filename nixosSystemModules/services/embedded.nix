@@ -19,6 +19,8 @@ in {
       SUBSYSTEM=="usb", ATTRS{idVendor}=="1d50",ATTRS{idProduct}=="608c", TAG+="uaccess", MODE="666", GROUP="plugdev"
       # AZ-Delivery-LogicAnalyzer
       SUBSYSTEM=="usb", ATTRS{idVendor}=="0925",ATTRS{idProduct}=="3881", TAG+="uaccess", MODE="666", GROUP="plugdev"
+      # kingst la2016
+      SUBSYSTEM=="usb", ATTRS{idVendor}=="77a1",ATTRS{idProduct}=="01a2", TAG+="uaccess", MODE="666", GROUP="plugdev"
     '';
   };
 }
