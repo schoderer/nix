@@ -8,6 +8,7 @@ in {
     home.packages = with unstable-pkgs; [
         vscode
         jetbrains-toolbox
+        kingstvis
     ];
   };
 }

@@ -11,6 +11,7 @@ in {
       pkgs.pureref # Reference Image Viewer
       unstable-pkgs.proton-pass
       unstable-pkgs.zed-editor
+      unstable-pkgs.lmstudio
     ];
   };
 }
