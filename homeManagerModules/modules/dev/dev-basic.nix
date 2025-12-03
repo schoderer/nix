@@ -23,6 +23,8 @@ in {
       nixd # nix language server
       bash-language-server
 
+      bluetui
+
       # Tools
       jujutsu
       gh
@@ -45,9 +47,11 @@ in {
       git = {
         enable = true;
         lfs.enable = true;
-        userName = "${cfg.gitUserName}";
-        userEmail = "${cfg.gitUserEmail}";
-        extraConfig = {
+        settings = {
+          user = {
+            name = "${cfg.gitUserName}";
+            email = "${cfg.gitUserEmail}";
+          };
           init.defaultbranch = "main";
           push.autosetupremote = true;
           pull.rebase = true;
