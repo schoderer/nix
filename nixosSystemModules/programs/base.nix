@@ -16,7 +16,6 @@ in {
     ];
     programs = {
       fish.enable = true;
-      ssh.startAgent = true;
       nix-ld = {
         enable = true;
         libraries = with pkgs; [
