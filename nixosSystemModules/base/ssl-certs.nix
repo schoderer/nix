@@ -1,0 +1,24 @@
+{ ... }: {
+  security.pki.certificates = [
+      ''
+        Homelab
+        =========
+        -----BEGIN CERTIFICATE-----
+        MIICmzCCAiKgAwIBAgIUOoyoSea5Ao0RILjSqJuL1wYr0E0wCgYIKoZIzj0EAwIw
+        gYQxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdCYXZlcmlhMQ8wDQYDVQQHDAZNdW5p
+        Y2gxEjAQBgNVBAoMCVNjaG9kZXJlcjEaMBgGA1UEAwwRTWljaGFlbCBTY2hvZGVy
+        ZXIxIjAgBgkqhkiG9w0BCQEWE3NjaG9kZXJlckBwcm90b24ubWUwHhcNMjUxMjA3
+        MDE1ODM1WhcNMzUxMjA1MDE1ODM1WjCBhDELMAkGA1UEBhMCREUxEDAOBgNVBAgM
+        B0JhdmVyaWExDzANBgNVBAcMBk11bmljaDESMBAGA1UECgwJU2Nob2RlcmVyMRow
+        GAYDVQQDDBFNaWNoYWVsIFNjaG9kZXJlcjEiMCAGCSqGSIb3DQEJARYTc2Nob2Rl
+        cmVyQHByb3Rvbi5tZTB2MBAGByqGSM49AgEGBSuBBAAiA2IABNS2EFw3xUHqbL40
+        TQFj8uWX5hCTDhfaGcJXDkOK0peu5hpqZP7Xwr53m+2olqBPilqyVS+P410g2pDm
+        lbXe2kVCiHCJx8J8MHo8LehnUFumAOJlrvR08LXdnKwi67HJ0aNTMFEwHQYDVR0O
+        BBYEFJlyOlVepq7aG/+1HsAgmZu2s2kLMB8GA1UdIwQYMBaAFJlyOlVepq7aG/+1
+        HsAgmZu2s2kLMA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwIDZwAwZAIwCZyd
+        QzOmyJKUlQK9or6yrI9FohEroMz9KP1bkFR1M4iLAhGCdZbDZHIsGoHqlJIhAjAC
+        LRHpMlJ0MvoqbqhuWg9+10B8X5mms3Mur1GbnWJWsL7B4mXZgcpXvSPpc41oXyc=
+        -----END CERTIFICATE-----
+      ''
+    ];
+}
