@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: let
+{ lib, config, ... }: let
   cfg = config.systemconfig.services.opentabletdriver;
 in {
   options.systemconfig.services.opentabletdriver = {

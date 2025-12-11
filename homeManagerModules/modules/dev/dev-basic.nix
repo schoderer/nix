@@ -20,7 +20,7 @@ in {
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
       # Language server
-      nixd # nix language server
+      nil # nix language server
       bash-language-server
 
       bluetui

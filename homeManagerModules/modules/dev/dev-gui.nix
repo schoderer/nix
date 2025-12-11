@@ -9,6 +9,7 @@ in {
         vscode
         jetbrains-toolbox
         kingstvis
+        bruno
     ];
   };
 }

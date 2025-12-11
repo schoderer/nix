@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: let 
+{ pkgs, lib, config, ... }: let
   cfg = config.systemconfig.programs.base;
 in {
   options.systemconfig.programs.base = {
@@ -18,7 +18,7 @@ in {
       fish.enable = true;
       nix-ld = {
         enable = true;
-        libraries = with pkgs; [
+        libraries = [
           # Add any missing dynamic libraries for unpackaged programs
           # here, NOT in environment.systemPackages
         ];

@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }: let
+{ lib, config, ... }: let
   cfg = config.systemconfig.services.openssh;
 in {
   options.systemconfig.services.openssh.enable = lib.mkEnableOption "openssh service";
@@ -9,7 +9,7 @@ in {
           PasswordAuthentication = false;
           KbdInteractiveAuthentication = false;
           PermitRootLogin = "no";
-          
+
         };
       };
   };
