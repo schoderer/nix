@@ -18,6 +18,7 @@
       };
       virtualization.enable = true;
       blender.enable = false;
+      ollama.enable = true;
     };
     services = {
       desktop.enable = true;
