@@ -16,8 +16,13 @@ in {
 
       startAgent = true;
       enableAskPassword = true;
-      askPassword = "${pkgs.kdePackages.ksshaskpass}/bin/ksshaskpass";
+      askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
     };
+    environment = {
+      sessionVariables = {
+        SSH_ASKPASS_REQUIRE="prefer";
+      };
+     };
 
   };
 }
