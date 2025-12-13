@@ -5,6 +5,7 @@
     ./embedded.nix
     ./k3s.nix
     ./opentabletdriver.nix
+    ./udev-rules.nix
   ];
   # Deactivates networkmanager, which makes the boot time longer
   systemd.services.NetworkManager-wait-online.enable = false;  

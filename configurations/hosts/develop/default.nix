@@ -9,7 +9,8 @@
       hostName = "develop";
       enableBluetooth = true;
     };
-    desktop.gnome.enable = true;
+    desktop.gnome.enable = false;
+    desktop.kde.enable = true;
     # desktop.niri.enable = true;
     programs = {
       base.enable = true;
@@ -24,6 +25,7 @@
       desktop.enable = true;
       embedded.enable = true;
       opentabletdriver.enable = true;
+      udev.enable = true;
     };
   };
 }
