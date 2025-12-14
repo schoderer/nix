@@ -6,9 +6,10 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    programs.hyprland.enable = true;
-    services.displayManager.lightdm.enable = true;
-
+    programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;  
+    };
 
     environment.systemPackages = with pkgs; [
       alacritty # Terminal
