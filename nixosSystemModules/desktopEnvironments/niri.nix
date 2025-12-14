@@ -19,19 +19,10 @@ in {
       pavucontrol # Volumecontrol
       wlogout
       bluetui # bluetooth management
-      gnome-keyring
-      nautilus # filemanager
       loupe # image viewer
 
       brightnessctl
       
     ];
-    programs = {
-      evince.enable = true; # pdf viewer
-      gnome-disks.enable = true;
-      seahorse.enable = true;
-    };
-
-    services.gnome.sushi.enable = true;
   };
 }

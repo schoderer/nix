@@ -14,7 +14,7 @@ in {
     ];
     programs.ssh = {
 
-      startAgent = true;
+      startAgent = pkgs.lib.mkForce true;
       enableAskPassword = true;
       askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
     };
