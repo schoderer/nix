@@ -236,9 +236,6 @@ layout {
     tab-indicator {
         place-within-column
         gaps-between-tabs 2
-        active-color "#c24692ff"
-        inactive-color "#141414ff"
-        corner-radius 4
     }
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
     // You can think of them as a kind of outer gaps. They are set in logical pixels.
@@ -624,3 +621,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
     Mod+Shift+Q { spawn "wlogout"; }
 }
+
+include "colors.kdl"

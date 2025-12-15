@@ -1,0 +1,19 @@
+overview {
+    backdrop-color "#25262eff"
+}
+
+layout {
+    tab-indicator {
+        active-color "#c24692ff"
+        inactive-color "#141414ff"
+        corner-radius 4
+    }
+
+    border {
+        off
+    }
+
+    focus-ring {
+        active-color "#257fa8ff"
+    }
+}

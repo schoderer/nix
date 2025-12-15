@@ -12,7 +12,10 @@
       gui.enable = true;
     };
     gui = {
-        niri.enable = true;
+        niri = {
+          enable = true;
+          ashell.enable = true;
+        };
         firefox.enable = true;
         gnomeSettings.enable = true;
         additional.enable = true;
