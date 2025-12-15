@@ -1,4 +1,4 @@
 [modules]
 left = ["Workspaces"]
-center = ["WindowTitle"]
-right = ["Tray", ["Clock", "Privacy", "Settings"]]
+center = ["Clock"]
+right = ["Tray", ["Privacy", "Settings"]]
