@@ -1,4 +1,10 @@
 [modules]
 left = ["Workspaces"]
 center = ["Clock"]
-right = ["Tray", ["Privacy", "Settings"]]
+right = ["Tray", "SystemInfo", ["Privacy", "Settings"]]
+
+
+
+
+[system_info]
+indicators = [ "Cpu", "Memory" ]
