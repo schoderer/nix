@@ -93,7 +93,6 @@ output "PNP(AOC) 2275W B63G3QA000769" {
 layout {
     // Set gaps around windows in logical pixels.
     gaps 2
-
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -263,7 +262,7 @@ spawn-at-startup "gnome-keyring-daemon --start --components=secrets"
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 overview {
-    backdrop-color "#02240dcc"
+    backdrop-color "#25262eff"
 }
 
 gestures {
