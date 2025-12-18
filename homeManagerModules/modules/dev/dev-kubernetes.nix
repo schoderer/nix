@@ -18,8 +18,7 @@ in {
     home = {
       packages = with pkgs; [
         # Kubernetes
-        minikube
-        docker-machine-kvm2 #Needed for minikube podman
+        kind
         
         kubectl
         kubie

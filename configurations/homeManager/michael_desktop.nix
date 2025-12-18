@@ -8,6 +8,7 @@
         gitUserName = "Michael Schoderer";
         gitUserEmail = "github.anemic814@passmail.net";
       };
+      ai.enable = true;
       kubernetes.enable = true;
       gui.enable = true;
     };
