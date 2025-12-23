@@ -2,7 +2,7 @@ default:
     just --list
 
 update:
-    nix flake update    
+    nix flake update
 clean:
     home-manager expire-generations -d || true
     home-manager remove-generations old || true
@@ -14,16 +14,16 @@ clean:
 
 #### OS Configurations
 rebuild-develop:
-    sudo nixos-rebuild switch --flake .#develop
+    sudo nixos-rebuild boot --flake .#develop
 
 rebuild-framework:
-    sudo nixos-rebuild switch --flake .#framework
+    sudo nixos-rebuild boot --flake .#framework
 
 rebuild-marvin:
-    sudo nixos-rebuild switch --flake .#marvin
+    sudo nixos-rebuild boot --flake .#marvin
 
 rebuild-sob:
-    sudo nixos-rebuild switch --flake .#sob
+    sudo nixos-rebuild boot --flake .#sob
 
 ### Cluster
 rebuild-h3k3:

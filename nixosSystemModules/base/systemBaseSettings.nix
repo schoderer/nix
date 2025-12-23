@@ -1,6 +1,13 @@
-{ pkgs, lib, config, ... }: let
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
+let
   cfg = config.systemconfig.base;
-in {
+in
+{
   options.systemconfig.base = {
     enable = lib.mkOption {
       type = lib.types.bool;
@@ -36,7 +43,7 @@ in {
         systemd-boot = {
           enable = true;
           configurationLimit = 5;
-       };
+        };
       };
     };
 
@@ -71,7 +78,7 @@ in {
     nix = {
       settings = {
         trusted-users = [ "michael" ];
-        experimental-features = [ 
+        experimental-features = [
           "nix-command"
           "flakes"
         ];
@@ -83,7 +90,6 @@ in {
         options = "--delete-older-than 1w";
       };
     };
-
 
     hardware.bluetooth.enable = cfg.enableBluetooth;
     hardware.bluetooth.powerOnBoot = cfg.enableBluetooth;
