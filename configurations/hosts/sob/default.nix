@@ -7,10 +7,12 @@
     base = {
       enable = true;
       hostName = "sob";
+      enableBluetooth = true;
     };
     desktop.gnome.enable = true;
     programs = {
       base.enable = true;
+      gaming.steam.enable = true;
       virtualization.enable = true;
     };
     services = {

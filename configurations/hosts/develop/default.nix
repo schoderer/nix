@@ -10,17 +10,14 @@
       hostName = "develop";
       enableBluetooth = true;
     };
-    desktop.gnome.enable = true;
-    #desktop.kde.enable = true;
-    desktop.niri.enable = true;
-    # desktop.hyprland.enable = true;
+    desktop = {
+      gnome.enable = true;
+      niri.enable = true;
+    };
     programs = {
       base.enable = true;
-      gaming = {
-        steam.enable = true;
-      };
+      gaming.steam.enable = true;
       virtualization.enable = true;
-      blender.enable = false;
       ollama.enable = true;
     };
     services = {
