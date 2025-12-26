@@ -18,7 +18,6 @@
       base.enable = true;
       gaming.steam.enable = true;
       virtualization.enable = true;
-      ollama.enable = true;
     };
     services = {
       desktop.enable = true;
