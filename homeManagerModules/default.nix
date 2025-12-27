@@ -7,5 +7,6 @@
     ./modules/dev
     ./modules/gui
     ./modules/security-utils.nix
+    ./modules/not-merged.nix
   ];
 }

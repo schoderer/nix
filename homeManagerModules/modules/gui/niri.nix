@@ -2,6 +2,16 @@
 let
     cfg = config.homeconfig.gui.niri;
     theme = "dusk";
+    ashellNixPkgs = pkgs.fetchFromGitHub {
+      owner = "CodedNil";
+      repo = "nixpkgs";
+      rev = "b6262549e53369d5cb6ee618423c59c2d208ad65";
+      sha256 = "sha256-lczQd0YXwJbs++zSk6xY+FQ8+SOKTYRyQN4OSuPBoMQ=";
+    };
+
+    ashellPkgs = import "${ashellNixPkgs}" {
+      system = "x86_64-linux";
+    };
 in {
   options.homeconfig.gui.niri = {
     enable = lib.mkEnableOption "niri Userconfig";
@@ -15,7 +25,9 @@ in {
       
       # Swaylock
       swaylock-effects
-    ];
+    ]    ++ lib.optionalAttrs cfg.ashell.enable [ ashellPkgs.ashell ]
+
+    ;
     
 
     home.file = {

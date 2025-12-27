@@ -11,6 +11,7 @@
       ai.enable = true;
       kubernetes.enable = true;
       gui.enable = true;
+      unmerged.enable = true;
     };
     gui = {
         niri = {
@@ -22,5 +23,6 @@
         additional.enable = true;
     };
     security-utils.enable = true;
+    
   };
 }
